@@ -1,0 +1,33 @@
+[project]
+name = "whipple-steady-turns"
+version = "0.1.0"
+description = "Stability of steady turns of the nonlinear Whipple bicycle"
+authors = [{ name = "Robin Wydaeghe" }]
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.10.9",
+    "numpy>=2.2.6",
+    "scipy>=1.15.3",
+    "sympy>=1.14.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.19,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "whipple"
+module-root = ""
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["B905"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
