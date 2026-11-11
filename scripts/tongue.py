@@ -1,4 +1,4 @@
-"""Region of stable turns at constant steer torque (Sect. 4.5): Figs. 4 and 8, Tables 1 and 5."""
+"""Region of stable turns at constant steer torque (Sect. 4.2): Figs. 3 and 7, Tables 1 and D2."""
 
 import numpy as np
 

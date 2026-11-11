@@ -1,5 +1,5 @@
 """Weave below the Hopf curve at T = -0.418 N m: lean maxima and the largest Lyapunov exponent chi
-at a few speed levels, from period doubling to chaos (Fig. 7b and 7c).
+at a few speed levels, from period doubling to chaos (Fig. 6b and 6c).
 
 The Python integrator is slow (about 1 s per simulated second), so the default run is short. It
 gives accurate lean maxima but only a rough chi. The full figure (4220 levels, 3000 s each) comes

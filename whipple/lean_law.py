@@ -147,7 +147,7 @@ class LeanLaw:
         return brentq(lambda v: self.modes(v)[0][0].real, 3.0, 6.0, xtol=1e-13)
 
     def cusp(self):
-        """Torque cusp at the capsize speed, Eq. (21): tau1', tau3, e2 and beta_E."""
+        """Torque cusp at the capsize speed, Eq. (C3): tau1', tau3, e2 and beta_E."""
         vc = self.lin.capsize_speed()
         c = self.contractions(vc)
         K = self.lin.K(vc)

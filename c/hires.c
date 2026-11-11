@@ -1,4 +1,4 @@
-/* High-resolution sweep for Fig. 7(b,c): lean maxima and the two largest Lyapunov exponents of the weave on
+/* High-resolution sweep for Fig. 6(b,c): lean maxima and the two largest Lyapunov exponents of the weave on
    many energy levels H at constant steer torque T (benchmark).  Method:
    fixed-step RK4 on the 4-D leaf (engine mode 1), start at the given state (focus turn + roll rate 1e-2 rad/s),
    transient t_trans without tangent vectors, then t_run with m = 2 tangent vectors, QR (Gram-Schmidt) every

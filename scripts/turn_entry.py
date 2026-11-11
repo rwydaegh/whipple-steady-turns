@@ -1,5 +1,5 @@
 """Turn entry of the benchmark bicycle under a virtual rider, from straight running at 5 m/s into a
-right turn of 10 m radius (Appendix D, Fig. 10)."""
+right turn of 10 m radius (Appendix D, Fig. D1)."""
 
 import numpy as np
 

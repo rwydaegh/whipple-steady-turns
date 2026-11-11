@@ -1,4 +1,4 @@
-"""Turns at constant steer torque with the rear-wheel speed held (Sect. 4.6, Fig. 5, Table 1)."""
+"""Turns at constant steer torque with the rear-wheel speed held (Sect. 4.3, Fig. 4a, Table 1)."""
 
 import numpy as np
 

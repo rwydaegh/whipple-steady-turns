@@ -1,4 +1,4 @@
-"""Frame pitch inertias in a corner (Sect. 6): derivatives of tau3, Eq. (22), the slope of the weave
+"""Frame pitch inertias in a corner (Sect. 7): derivatives of tau3, Eq. (21), the slope of the weave
 coefficient Lambda_w in I_Hyy, and the steer-torque difference of bicycles A and B."""
 
 import math
@@ -17,7 +17,7 @@ DI = BICYCLE_B["IHyy"] - BICYCLE_A["IHyy"]
 
 
 def closed_derivatives(p, V):
-    """d tau3 / d I_Byy and d tau3 / d I_Hyy (N m per kg m^2) from Eq. (22)."""
+    """d tau3 / d I_Byy and d tau3 / d I_Hyy (N m per kg m^2) from Eq. (21)."""
     lin = Linear(p)
     K, r, sl = lin.K(V), lin.steer_ratio(V), math.sin(p["lam"])
     k2r2 = (V * math.cos(p["lam"]) / p["w"]) ** 2 * r**2
@@ -52,9 +52,9 @@ def main():
 
     save_json("pitch_inertia", {
         "V (m/s)": V_PAIR,
-        "d tau3/d I_Byy, Eq. (22)": dB,
+        "d tau3/d I_Byy, Eq. (21)": dB,
         "d tau3/d I_Byy, small-lean expansion": (tau3["Byy"] - tau3["A"]) / DI,
-        "d tau3/d I_Hyy, Eq. (22)": dH,
+        "d tau3/d I_Hyy, Eq. (21)": dH,
         "d tau3/d I_Hyy, small-lean expansion": (tau3["B"] - tau3["A"]) / DI,
         "d Lambda_w/d I_Hyy at v_E = V (1/(s kg m^2))": (lam_b - lam_a) / DI,
         "torque at 4 m/s and 20 deg": {

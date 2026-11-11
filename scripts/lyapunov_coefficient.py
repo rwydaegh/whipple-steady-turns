@@ -1,5 +1,5 @@
 """First Lyapunov coefficient l1 of the weave Hopf bifurcation, upright and along the cornering Hopf
-curve, and the Bautin point of bicycle B where l1 changes sign (Sect. 6.3, Fig. 9, Table 5)."""
+curve, and the Bautin point of bicycle B where l1 changes sign (Sect. 7.3, Fig. 8)."""
 
 import numpy as np
 from matplotlib.ticker import FixedLocator

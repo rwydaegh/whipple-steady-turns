@@ -1,5 +1,5 @@
 """Turns held by a lateral offset of the rear-frame mass centre at zero steer torque, the trim of
-Franke et al. (1990), compared with turns at constant steer torque (Sect. 4.7, Fig. 6)."""
+Franke et al. (1990), compared with turns at constant steer torque (Sect. 4.4, Fig. 4b)."""
 
 import numpy as np
 

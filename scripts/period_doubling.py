@@ -1,5 +1,5 @@
 """Period doubling of the weave cycle below the Hopf curve of the benchmark bicycle at
-T = -0.418 N m (Sect. 5)."""
+T = -0.418 N m (Sect. 6)."""
 
 import numpy as np
 
