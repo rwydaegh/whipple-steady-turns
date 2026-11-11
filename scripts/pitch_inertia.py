@@ -53,9 +53,9 @@ def main():
     save_json("pitch_inertia", {
         "V (m/s)": V_PAIR,
         "d tau3/d I_Byy, Eq. (22)": dB,
-        "d tau3/d I_Byy, lean law": (tau3["Byy"] - tau3["A"]) / DI,
+        "d tau3/d I_Byy, small-lean expansion": (tau3["Byy"] - tau3["A"]) / DI,
         "d tau3/d I_Hyy, Eq. (22)": dH,
-        "d tau3/d I_Hyy, lean law": (tau3["B"] - tau3["A"]) / DI,
+        "d tau3/d I_Hyy, small-lean expansion": (tau3["B"] - tau3["A"]) / DI,
         "d Lambda_w/d I_Hyy at v_E = V (1/(s kg m^2))": (lam_b - lam_a) / DI,
         "torque at 4 m/s and 20 deg": {
             "a_y/g": ay / 9.81,

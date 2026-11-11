@@ -36,7 +36,8 @@ def main():
     cs = ax.contour(V, ay / ps.G, T, levels=[-1.0, -0.5, -0.25, 0.25, 0.5], colors=ps.CONTOUR,
                     linewidths=0.5, zorder=1)  # fmt: skip
     ps.contour_labels(ax, cs, 0.74, x_min=1.5, x_max=9.8)
-    # Near upright T is zero to rounding, so the grid draws the hands-free turns only above 0.02 g.
+    # Near upright T is zero to rounding, so the hands-free turns are drawn from the grid only
+    # above 0.02 g.
     T0 = np.where(ay < 0.02 * ps.G, np.nan, T)
     ax.contour(V, ay / ps.G, T0, levels=[0.0], colors=ps.HANDS_FREE, linewidths=ps.LW, zorder=3)
     lobe = np.array([[x.V, x.ay / ps.G] for x in (bike.turn(*p) for p in st.hands_free(bike, 0.1))])

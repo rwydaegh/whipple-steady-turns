@@ -204,10 +204,11 @@ def bogdanov_takens(bike, guess, plant="free"):
     return newton_system(lambda x: characteristic(bike, *x, plant)[2:], np.asarray(guess, float))
 
 
-def tongue(bike: Whipple, plant="free", phi_max=0.36, ds_max=2e-3) -> Tongue:
+def tongue(bike: Whipple, plant="free", phi_max=0.36, ds_max=2e-3,
+           weave_bracket=(3.0, 6.0)) -> Tongue:  # fmt: skip
     """Hopf and fold curves of turns held by the given trim, from upright to the tip and beyond."""
     lin = Linear(bike.p)
-    vw, vc = lin.weave_speed(), lin.capsize_speed()
+    vw, vc = lin.weave_speed(weave_bracket), lin.capsize_speed()
 
     def hopf_test(x):
         return hurwitz(characteristic(bike, *x, plant))[0]

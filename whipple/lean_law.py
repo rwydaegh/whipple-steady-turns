@@ -1,7 +1,7 @@
-"""Second-order lean law: lambda_k(v_E, phi0) = lambda_k(v_E) + Lambda_k(v_E) phi0^2, Eq. (13).
+"""Small-lean expansion: lambda_k(v_E, phi0) = lambda_k(v_E) + Lambda_k(v_E) phi0^2, Eq. (13).
 
-Lambda_k uses only the upright linear model and the next Taylor terms of the nonlinear model at
-zero lean and steer. The Taylor terms are Cauchy integrals of the model on the polydisc
+Lambda_k depends only on the upright linear model and the next Taylor terms of the nonlinear model
+at zero lean and steer. The Taylor terms are Cauchy integrals of the model on the polydisc
 |phi| = |delta| = rho, computed by a 2D FFT.
 """
 

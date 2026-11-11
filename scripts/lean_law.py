@@ -1,5 +1,5 @@
-"""Lean law: coefficients Lambda_k at the upright weave and capsize speeds (Tables 2 and 3) and the
-comparison with eigenvalues of turns of the benchmark bicycle (Fig. 3)."""
+"""Small-lean expansion: coefficients Lambda_k at the upright weave and capsize speeds (Tables 2
+and 3) and the comparison with eigenvalues of turns of the benchmark bicycle (Fig. 3)."""
 
 import numpy as np
 

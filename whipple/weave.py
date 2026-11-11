@@ -2,6 +2,8 @@
 first integral H = E - T delta, the first Lyapunov coefficient, and the period doubling of the weave
 cycle."""
 
+import warnings
+
 import numpy as np
 from scipy.integrate import solve_ivp
 from scipy.optimize import brentq, newton
@@ -116,8 +118,16 @@ class TorqueFamily:
 
     def steer(self, phi):
         p0, d0 = self._last
-        d = newton(lambda d: self.bike.turn_spin_torque(phi, d)[1] - self.T, d0 * phi / p0,
-                   tol=1e-14, maxiter=60)  # fmt: skip
+
+        def residual(d):
+            return self.bike.turn_spin_torque(phi, d)[1] - self.T
+
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", RuntimeWarning)  # tolerance reached on a flat residual
+            d, info = newton(residual, d0 * phi / p0, tol=1e-14, maxiter=60, full_output=True,
+                             disp=False)  # fmt: skip
+        if not info.converged and abs(residual(d)) > 1e-10:
+            raise RuntimeError(f"steady turn at lean {phi} not found")
         self._last = (phi, d)
         return d
 
@@ -194,7 +204,7 @@ def _min_real(mu):
 def period_doubling(bike: Whipple, T, hopf_guess, start=0.25, step=0.05, settle_time=200.0):
     """Level H where the weave cycle at steer torque T has a Floquet multiplier of -1.
 
-    The level steps down from the Hopf level in units of W = H_fold - H_Hopf. The Poincare
+    The level is lowered from the Hopf level in units of W = H_fold - H_Hopf. The Poincare
     section is the lean of the steady turn inside the weave cycle.
     """
     fam = TorqueFamily(bike, T, *hopf_guess)
@@ -229,3 +239,46 @@ def period_doubling(bike: Whipple, T, hopf_guess, start=0.25, step=0.05, settle_
     phi_s = fam.lean_on_level(Hb, phi_h - 0.1, phi_h)
     return dict(H=Hb, H_hopf=H_h, H_fold=H_f, turn=fam.turn(phi_s), hopf_turn=fam.turn(phi_h),
                 period=period, multipliers=mu)  # fmt: skip
+
+
+def weave_start(fam: TorqueFamily, H, phi_hopf, phi_fold):
+    """Start of a weave run on level H: the weaving (focus) turn with a roll rate of 0.01 rad/s.
+
+    Returns the state and the lean of the saddle turn on the level. The weave falls when the lean
+    passes the saddle lean by more than 0.3 rad.
+    """
+    phi = fam.lean_on_level(H, phi_hopf - 0.1, phi_hopf)
+    saddle = fam.lean_on_level(H, phi_fold, phi_fold + 0.075)
+    return np.array([phi, fam.steer(phi), 0.01, 0.0]), saddle
+
+
+def weave_run(leaf: Leaf, y0, lean_limit, t_trans=100.0, t_run=100.0, dt=0.5):
+    """Lean maxima and the largest Lyapunov exponent chi of the weave on one level.
+
+    Transient t_trans, then t_run with one tangent vector (complex step, Benettin), renormalised
+    every dt. Returns the status ('bounded' or 'fall'), the lean maxima (rad) and chi (1/s).
+    """
+
+    def field(t, x):
+        return np.r_[leaf.field(x[:4]), leaf.derivative(x[:4], x[4:])]
+
+    def fall(t, x):
+        return min(lean_limit - x[0], x[0] + 0.6)
+
+    def peak(t, x):
+        return x[2]
+
+    fall.terminal, peak.direction = True, -1
+    kw = dict(method="DOP853", rtol=1e-9, atol=1e-11, max_step=0.1, events=(fall, peak))
+    x, S, maxima = np.r_[y0, 0.5, -0.5, 0.5, 0.5], 0.0, []
+    for k in range(int(round((t_trans + t_run) / dt))):
+        sol = solve_ivp(field, (0, dt), x, **kw)
+        if len(sol.t_events[0]):
+            return dict(status="fall", maxima=np.array(maxima), chi=np.nan)
+        x = sol.y[:, -1]
+        n = np.linalg.norm(x[4:])
+        x[4:] /= n
+        if k * dt >= t_trans:
+            S += np.log(n)
+            maxima += [e[0] for e in sol.y_events[1]]
+    return dict(status="bounded", maxima=np.array(maxima), chi=S / t_run)
