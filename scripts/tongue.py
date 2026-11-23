@@ -1,4 +1,4 @@
-"""Region of stable turns at constant steer torque (Sect. 4.2): Figs. 3 and 7, Tables 1 and D2."""
+"""Region of stable turns of the benchmark bicycle and bicycles A and B (tab:region)."""
 
 import numpy as np
 

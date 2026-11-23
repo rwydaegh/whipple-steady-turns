@@ -1,5 +1,4 @@
-"""Capsize condition in a turn, Eq. (10): the product of the four nonzero eigenvalues equals
--2 F_c,phi / (m_s det M_eff) times det d(T, H)/d(lean, steer), at random steady turns."""
+"""Capsize condition of Theorem 1 at random steady turns (Sect. 6.1, eq. fold)."""
 
 import numpy as np
 

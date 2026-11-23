@@ -1,7 +1,4 @@
-"""Region of stable turns of ten measured bicycles (parameters of Moore, BicycleParameters):
-upright weave and capsize speeds, Bogdanov-Takens tip and largest stable lean. Reproduces the
-tongues of measured bicycles (speed-lean plane and normalised plane). Browser, Silver and
-Yellowrev have no ordinary tongue and are not computed."""
+"""Regions of stable turns of the measured bicycles without a rider (BicycleParameters data)."""
 
 import json
 from pathlib import Path

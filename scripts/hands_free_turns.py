@@ -1,5 +1,4 @@
-"""Hands-free steady turns of the benchmark bicycle from Basu-Mandal, Chatterjee and Papadopoulos
-(2007): equation residuals, turn radii and eigenvalues (Appendix D, Table 4)."""
+"""Hands-free turns of Basu-Mandal et al. (2007) as a test of the model (supplement)."""
 
 import numpy as np
 

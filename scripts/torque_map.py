@@ -1,5 +1,4 @@
-"""Steer torque that holds a steady turn of the benchmark bicycle (Fig. 1) and the peak of the
-hands-free lobe for the three bicycles (Sect. 3)."""
+"""Steer torque of benchmark turns over speed and lateral acceleration (not in the paper)."""
 
 import numpy as np
 

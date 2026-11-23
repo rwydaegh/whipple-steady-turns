@@ -3,3 +3,5 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 results/
+.vscode/
+.rm_confirmed

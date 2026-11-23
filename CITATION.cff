@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, and cite the paper listed under references."
+title: "whipple-steady-turns: code and data for the stability of steady turns of the Whipple bicycle"
+type: software
+authors:
+  - family-names: Wydaeghe
+    given-names: Robin
+    affiliation: "Ghent University and imec"
+version: 0.2.0
+date-released: 2026-11-23
+license: MIT
+keywords:
+  - bicycle dynamics
+  - Whipple model
+  - steady turning
+  - nonholonomic systems
+  - Hopf bifurcation
+  - capsize
+references:
+  - type: article
+    title: "Stability of steady turns of the Whipple bicycle"
+    status: in-preparation
+    authors:
+      - family-names: Wydaeghe
+        given-names: Robin
+      - family-names: Limebeer
+        given-names: David J. N.
+    year: 2026

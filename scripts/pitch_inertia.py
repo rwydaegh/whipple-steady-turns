@@ -1,5 +1,4 @@
-"""Frame pitch inertias in a corner (Sect. 7): derivatives of tau3, Eq. (21), the slope of the weave
-coefficient Lambda_w in I_Hyy, and the steer-torque difference of bicycles A and B."""
+"""Effect of the frame pitch inertias on the turns (not in the paper)."""
 
 import math
 

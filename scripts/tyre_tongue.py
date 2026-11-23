@@ -1,12 +1,4 @@
-"""Tyre-slip tongue: stable turns of the benchmark bicycle at constant steer torque on Magic Formula
-tyres with the rear-wheel speed held (Appendix F, Fig. a).
-
-For each speed the lean is stepped up from upright and the edges of the stable region are found
-where the largest real part of the 8 eigenvalues changes sign: a weave Hopf edge (complex pair) or
-a fold edge (real eigenvalue). The Bogdanov-Takens point solves det J = 0 and c_7 = 0 for the
-characteristic polynomial, and the largest stable lean is the maximum of the fold curve.
-Reference numbers of the paper: BT point at 10.43 deg and 2.54 m/s, largest stable lean 18.73 deg.
-"""
+"""Stable benchmark turns on Magic Formula tyres at constant speed (not in the paper)."""
 
 import numpy as np
 from scipy.optimize import brentq, minimize_scalar

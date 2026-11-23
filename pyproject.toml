@@ -1,6 +1,6 @@
 [project]
 name = "whipple-steady-turns"
-version = "0.1.0"
+version = "0.2.0"
 description = "Stability of steady turns of the nonlinear Whipple bicycle"
 authors = [{ name = "Robin Wydaeghe" }]
 license = "MIT"

@@ -1,4 +1,4 @@
-"""Turns at constant steer torque with the rear-wheel speed held (Sect. 4.3, Fig. 4a, Table 1)."""
+"""Region of stable turns at constant rear-wheel speed (Sect. 6.4, "Constant speed")."""
 
 import numpy as np
 
@@ -11,8 +11,8 @@ from whipple.output import options, save_json
 
 def summary(bike, t):
     bt = bike.turn(*t.bt)
-    lean = st.largest_stable(bike, t, lambda x: x.phi, "held")
-    ay = st.largest_stable(bike, t, lambda x: x.ay, "held")
+    lean = st.largest_stable(bike, t, lambda x: x.phi, "constant")
+    ay = st.largest_stable(bike, t, lambda x: x.ay, "constant")
     return {
         "BT lean (deg)": np.degrees(bt.phi),
         "BT speed V (m/s)": bt.V,
@@ -32,12 +32,13 @@ def main():
     for name in names:
         bike = Whipple(BICYCLES[name])
         free = st.tongue(bike, ds_max=ds)
-        held = st.tongue(bike, plant="held", ds_max=ds)
-        out[name] = summary(bike, held)
+        constant = st.tongue(bike, plant="constant", ds_max=ds)
+        out[name] = summary(bike, constant)
         if name == "benchmark":
             fig, ax = ps.figure(ps.HALF, 5.6 * ps.CM)
             ps.draw_tongue(ax, bike, free, beyond=False)
-            ps.draw_tongue(ax, bike, held, ls=ps.DASH, fill=False, beyond=False, filled_marker=True)
+            ps.draw_tongue(ax, bike, constant, ls=ps.DASH, fill=False, beyond=False,
+                           filled_marker=True)
             ax.set(xlim=(2.4, 6.4), ylim=(0, 16), xticks=[3, 4, 5, 6], yticks=[0, 5, 10, 15],
                    xlabel=ps.XV, ylabel=ps.YLEAN)  # fmt: skip
             ps.label(ax, 3.55, 3.0, "Hopf", color=ps.HOPF, ha="right")

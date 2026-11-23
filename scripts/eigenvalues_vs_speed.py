@@ -1,4 +1,4 @@
-"""Eigenvalues of steady turns of the benchmark bicycle over speed at four leans (Fig. 2)."""
+"""Eigenvalues of benchmark turns against speed at four leans (not in the paper)."""
 
 import numpy as np
 from scipy.optimize import brentq, linear_sum_assignment
