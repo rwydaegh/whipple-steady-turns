@@ -1,0 +1,140 @@
+{
+ "benchmark": {
+  "None": {
+   "v_w": 4.2923825363411074,
+   "v_c": 6.024262015388364,
+   "lean_free": 12.47245321906814,
+   "lean_constant": 13.840201429908232,
+   "tip_V": 2.7895602902811047
+  },
+  "Battery 3 kg on the rear rack": {
+   "v_w": 4.344554533677014,
+   "v_c": 6.0128073927776144,
+   "lean_free": 12.486981155259256,
+   "lean_constant": 13.866674715171964,
+   "tip_V": 2.8311714734167963,
+   "ok_free": true
+  },
+  "Battery 3 kg on the down tube": {
+   "v_w": 4.276219612318433,
+   "v_c": 6.166318937343221,
+   "lean_free": 12.706480059628843,
+   "lean_constant": 14.059831979577183,
+   "tip_V": 2.817453415945984,
+   "ok_free": true
+  },
+  "Child seat 20 kg": {
+   "v_w": 4.393260097450146,
+   "v_c": 5.83588633466969,
+   "lean_free": 11.838143588858081,
+   "lean_constant": 13.157937556755797,
+   "tip_V": 3.2101502174643013,
+   "ok_free": true
+  },
+  "Basket 5 kg on the handlebar (front frame)": {
+   "v_w": 5.370707794833164,
+   "v_c": 7.404471449700685,
+   "lean_free": 17.298422020362853,
+   "lean_constant": 19.950522958381296,
+   "tip_V": 3.9090940537220487,
+   "ok_free": true
+  },
+  "Basket 5 kg at the same place on the rear frame": {
+   "v_w": 4.458836103229243,
+   "v_c": 6.447395729839337,
+   "lean_free": 13.432595782131363,
+   "lean_constant": 14.929734756352914,
+   "tip_V": 3.0082211019557428,
+   "ok_free": true
+  },
+  "Hub motor 3 kg, front": {
+   "v_w": 4.222658756726521,
+   "v_c": 6.237619312377414,
+   "lean_free": 12.676631447443626,
+   "lean_constant": 13.962411689931109,
+   "tip_V": 3.0392821504917955,
+   "ok_free": true
+  },
+  "Hub motor 3 kg, rear": {
+   "v_w": 4.338864795096791,
+   "v_c": 6.04498840590705,
+   "lean_free": 12.590129660946108,
+   "lean_constant": 13.95646433705967,
+   "tip_V": 2.7983791713990085,
+   "ok_free": true
+  }
+ },
+ "A_rider": {
+  "None": {
+   "v_w": 5.422618690582144,
+   "v_c": 8.594167693332569,
+   "lean_free": 16.606298853397274,
+   "lean_constant": 18.347857418451856,
+   "tip_V": 3.9998944831698595
+  },
+  "Battery 3 kg on the rear rack": {
+   "v_w": 5.4797744921012805,
+   "v_c": 8.57656023302589,
+   "lean_free": 16.67704616525604,
+   "lean_constant": 18.44343221588378,
+   "tip_V": 4.050860731367908,
+   "ok_free": true
+  },
+  "Battery 3 kg on the down tube": {
+   "v_w": 5.436961354757,
+   "v_c": 8.788133016312575,
+   "lean_free": 16.845186797425367,
+   "lean_constant": 18.548941716938646,
+   "tip_V": 4.037695410227595,
+   "ok_free": true
+  },
+  "Child seat 20 kg": {
+   "v_w": 5.75352852838472,
+   "v_c": 8.332088628343044,
+   "lean_free": 16.12289150495903,
+   "lean_constant": 17.885901873598158,
+   "tip_V": 4.5245401347615,
+   "ok_free": true
+  },
+  "Basket 5 kg on the handlebar (front frame)": {
+   "v_w": 6.568430804414403,
+   "v_c": 10.431691183716753,
+   "lean_free": 21.374690829003903,
+   "lean_constant": 23.948559645102478,
+   "tip_V": 5.394661272535369,
+   "ok_free": true
+  },
+  "Basket 5 kg at the same place on the rear frame": {
+   "v_w": 5.672824007079582,
+   "v_c": 9.145021264815869,
+   "lean_free": 17.68385951448167,
+   "lean_constant": 19.535712043608505,
+   "tip_V": 4.261895508038103,
+   "ok_free": true
+  },
+  "Hub motor 3 kg, front": {
+   "v_w": 5.496547410810368,
+   "v_c": 8.762132760153408,
+   "lean_free": 16.442105513136593,
+   "lean_constant": 18.008953679813228,
+   "tip_V": 4.330288112602326,
+   "ok_free": true
+  },
+  "Hub motor 3 kg, rear": {
+   "v_w": 5.454497376497727,
+   "v_c": 8.62933741229148,
+   "lean_free": 16.786170153357133,
+   "lean_constant": 18.53028136923732,
+   "tip_V": 4.007804860687868,
+   "ok_free": true
+  },
+  "Rider leans forward": {
+   "v_w": 5.819365850614153,
+   "v_c": 9.461254857184837,
+   "lean_free": 19.85903269372104,
+   "lean_constant": 22.265956969868807,
+   "tip_V": 3.8745146500768284,
+   "ok_free": true
+  }
+ }
+}

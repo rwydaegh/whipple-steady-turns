@@ -1,0 +1,489 @@
+{
+ "tab_rule": {
+  "measured bicycle and rider sets, lean below 20 deg": {
+   "n": 21,
+   "exact": [
+    8.977290374264891,
+    18.313003296793134
+   ],
+   "second_order": {
+    "rms": 0.010122986066587139,
+    "largest": 0.01735653716193042,
+    "overestimates": 7
+   },
+   "first_order": {
+    "rms": 0.20387987942820326,
+    "largest": 0.3883342403203258,
+    "overestimates": 19
+   }
+  },
+  "Schwab et al. rider": {
+   "name": "Rigid+rider(Schwab2013)",
+   "exact": 21.328319489661677,
+   "exact_constant": 23.758819419458934,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 21.41151080698735,
+   "V": 8.127117934759358,
+   "first_order": 22.133338329293263,
+   "constant_rule": 24.85191535998554
+  },
+  "Yellowrev with rider": {
+   "name": "Yellowrev+Jason",
+   "exact": 30.398702758917743,
+   "exact_constant": 34.93268678642414,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 31.060052962802658,
+   "V": 10.82600384524055,
+   "first_order": 32.05868778260736,
+   "constant_rule": 37.27710457604635
+  },
+  "benchmark, A, B and nine riderless sets": {
+   "n": 12,
+   "exact": [
+    8.376620409894524,
+    17.107643570732105
+   ],
+   "second_order": {
+    "rms": 0.07156031883068499,
+    "largest": -0.14258580702762025,
+    "overestimates": 0
+   },
+   "first_order": {
+    "rms": 0.2815938905471028,
+    "largest": -0.590191882594036,
+    "overestimates": 4
+   }
+  }
+ },
+ "benchmark": {
+  "name": "benchmark",
+  "exact": 12.47245321906814,
+  "exact_constant": 13.840201429908232,
+  "edge": "fold",
+  "valid": true,
+  "second_order": 12.4525740970887,
+  "V": 4.543243809638778,
+  "first_order": 12.606582624784014,
+  "constant_rule": 13.98151889641322
+ },
+ "constant_rule_below_20deg": {
+  "rms": 0.22351542116426693,
+  "largest": 0.45159588148416674,
+  "overestimates": 17
+ },
+ "rider_sets_meeting_conditions": 23,
+ "riderless_failing_condition_c": [
+  "Browser"
+ ],
+ "rows": {
+  "benchmark": {
+   "name": "benchmark",
+   "exact": 12.47245321906814,
+   "exact_constant": 13.840201429908232,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 12.4525740970887,
+   "V": 4.543243809638778,
+   "first_order": 12.606582624784014,
+   "constant_rule": 13.98151889641322
+  },
+  "A": {
+   "name": "A",
+   "exact": 15.164513830016974,
+   "exact_constant": 16.431645448066245,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 15.111756799968258,
+   "V": 4.820249601571048,
+   "first_order": 15.110939571178296,
+   "constant_rule": 16.391878665070887
+  },
+  "B": {
+   "name": "B",
+   "exact": 16.073761548727937,
+   "exact_constant": 17.676651965415417,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 16.00481528481013,
+   "V": 4.956512615031522,
+   "first_order": 16.308548518716446,
+   "constant_rule": 18.162139101440683
+  },
+  "Browser+Jason": {
+   "name": "Browser+Jason",
+   "exact": 14.057032723818176,
+   "exact_constant": 15.388752492540986,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 14.056741298740578,
+   "V": 5.607695335289588,
+   "first_order": 14.261569171826206,
+   "constant_rule": 15.609053216844131
+  },
+  "Browserins+Jason": {
+   "name": "Browserins+Jason",
+   "exact": 14.169966877330213,
+   "exact_constant": 15.517855158309386,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 14.170504592987584,
+   "V": 5.637644457968848,
+   "first_order": 14.393561051618091,
+   "constant_rule": 15.76709195894306
+  },
+  "Stratos+Jason": {
+   "name": "Stratos+Jason",
+   "exact": 14.835877483182587,
+   "exact_constant": 16.02569606206479,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 14.82621383228135,
+   "V": 6.075090726858015,
+   "first_order": 14.994427961018062,
+   "constant_rule": 16.183838471792033
+  },
+  "Rigid+Jason": {
+   "name": "Rigid+Jason",
+   "exact": 18.313003296793134,
+   "exact_constant": 19.990911607031858,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 18.330359833955065,
+   "V": 7.4148402855948135,
+   "first_order": 18.70133753711346,
+   "constant_rule": 20.442507488516025
+  },
+  "Balanceassistv1+Jason": {
+   "name": "Balanceassistv1+Jason",
+   "exact": 8.977290374264891,
+   "exact_constant": 9.454647871538246,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 8.962861663975435,
+   "V": 4.45562626500328,
+   "first_order": 8.862243493185485,
+   "constant_rule": 9.295968373358034
+  },
+  "Rigidcl+Luke": {
+   "name": "Rigidcl+Luke",
+   "exact": 17.90934735284582,
+   "exact_constant": 19.539205203057634,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 17.920629899124606,
+   "V": 7.232914336983707,
+   "first_order": 18.260686682891237,
+   "constant_rule": 19.940753236339095
+  },
+  "Rigidcl+Charlie": {
+   "name": "Rigidcl+Charlie",
+   "exact": 17.30978475463464,
+   "exact_constant": 18.84663958744069,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 17.314351000210063,
+   "V": 7.025368993776789,
+   "first_order": 17.588753839300317,
+   "constant_rule": 19.145200256128657
+  },
+  "Gyro+Child": {
+   "name": "Gyro+Child",
+   "exact": 16.15095859841509,
+   "exact_constant": 17.770702988696733,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 16.134443598963095,
+   "V": 4.282160871403595,
+   "first_order": 16.289646992316094,
+   "constant_rule": 17.86283510985831
+  },
+  "Crescendo+Jason": {
+   "name": "Crescendo+Jason",
+   "exact": 17.255405963309475,
+   "exact_constant": 19.08269745690061,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 17.267768307750117,
+   "V": 6.504917000010129,
+   "first_order": 17.59344787152944,
+   "constant_rule": 19.462548598504387
+  },
+  "Yellow+Jason": {
+   "name": "Yellow+Jason",
+   "exact": 11.574991284111153,
+   "exact_constant": 12.44510710588011,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 11.562093882998107,
+   "V": 5.0822456117757175,
+   "first_order": 11.603305490743198,
+   "constant_rule": 12.443165707605454
+  },
+  "Yellowrev+Jason": {
+   "name": "Yellowrev+Jason",
+   "exact": 30.398702758917743,
+   "exact_constant": 34.93268678642414,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 31.060052962802658,
+   "V": 10.82600384524055,
+   "first_order": 32.05868778260736,
+   "constant_rule": 37.27710457604635
+  },
+  "Browser+Mont": {
+   "name": "Browser+Mont",
+   "exact": 14.863425633795964,
+   "exact_constant": 16.355598337509154,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 14.869703774264861,
+   "V": 5.9377648365784,
+   "first_order": 15.140313231366498,
+   "constant_rule": 16.673266838933674
+  },
+  "Browser+Chris": {
+   "name": "Browser+Chris",
+   "exact": 12.479713230111752,
+   "exact_constant": 13.569120762525818,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 12.472538850089686,
+   "V": 4.980011123817338,
+   "first_order": 12.580764574862991,
+   "constant_rule": 13.656674276678551
+  },
+  "Browser+Aurelia": {
+   "name": "Browser+Aurelia",
+   "exact": 12.07089186778482,
+   "exact_constant": 13.13812315013121,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 12.06366530498736,
+   "V": 4.809391068263274,
+   "first_order": 12.169570503062403,
+   "constant_rule": 13.225142243142832
+  },
+  "Browser+Luke": {
+   "name": "Browser+Luke",
+   "exact": 13.776652030624259,
+   "exact_constant": 15.111852915302205,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 13.776895976593213,
+   "V": 5.486019847925447,
+   "first_order": 13.992821926275294,
+   "constant_rule": 15.351852815557702
+  },
+  "Browser+Charlie": {
+   "name": "Browser+Charlie",
+   "exact": 13.43001064932745,
+   "exact_constant": 14.714756125342925,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 13.428793961566981,
+   "V": 5.371535478682328,
+   "first_order": 13.617064674383261,
+   "constant_rule": 14.912928672121248
+  },
+  "Fisher+Jason72(Hess2012)": {
+   "name": "Fisher+Jason72(Hess2012)",
+   "exact": 15.559451427166119,
+   "exact_constant": 17.190838692578726,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 15.555162288627868,
+   "V": 6.014862074693359,
+   "first_order": 15.768373968582322,
+   "constant_rule": 17.386332485183843
+  },
+  "Pista+Jason72(Hess2012)": {
+   "name": "Pista+Jason72(Hess2012)",
+   "exact": 13.54729471101614,
+   "exact_constant": 14.806404556963399,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 13.529975033043494,
+   "V": 5.455484365890059,
+   "first_order": 13.597604680456959,
+   "constant_rule": 14.79356125160358
+  },
+  "Browser+Jason72(Hess2012)": {
+   "name": "Browser+Jason72(Hess2012)",
+   "exact": 13.023791043952349,
+   "exact_constant": 14.248202486909099,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 13.019081335467536,
+   "V": 5.1942122370145345,
+   "first_order": 13.16865623128872,
+   "constant_rule": 14.38996506113298
+  },
+  "Yellow+Jason72(Hess2012)": {
+   "name": "Yellow+Jason72(Hess2012)",
+   "exact": 10.01901701125102,
+   "exact_constant": 10.805889769354993,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 10.005843904120734,
+   "V": 4.391059433966123,
+   "first_order": 10.001508517013665,
+   "constant_rule": 10.745363816770954
+  },
+  "Rigid+rider(Schwab2013)": {
+   "name": "Rigid+rider(Schwab2013)",
+   "exact": 21.328319489661677,
+   "exact_constant": 23.758819419458934,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 21.41151080698735,
+   "V": 8.127117934759358,
+   "first_order": 22.133338329293263,
+   "constant_rule": 24.85191535998554
+  },
+  "DelftBrowser+Arend(Moore2012)": {
+   "name": "DelftBrowser+Arend(Moore2012)",
+   "exact": 12.526694046235871,
+   "exact_constant": 13.603574806775683,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 12.519365554473456,
+   "V": 5.310839959644873,
+   "first_order": 12.622339745635578,
+   "constant_rule": 13.680800534652517
+  },
+  "DelftBrowser+Jason(Moore2012)": {
+   "name": "DelftBrowser+Jason(Moore2012)",
+   "exact": 11.104828296797107,
+   "exact_constant": 12.018990577679704,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 11.09501628076952,
+   "V": 4.673900917549231,
+   "first_order": 11.141895691693508,
+   "constant_rule": 12.027660152144586
+  },
+  "Browser": {
+   "name": "Browser",
+   "exact": 7.416071335782515,
+   "exact_constant": 7.517775401367484,
+   "edge": "hopf",
+   "valid": true,
+   "second_order": 8.581495319486274,
+   "V": 3.263181971986205,
+   "first_order": 8.337062319341308,
+   "constant_rule": 8.667627965390063
+  },
+  "Browserins": {
+   "name": "Browserins",
+   "exact": 8.376620409894524,
+   "exact_constant": 8.78788345024701,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 8.374327606333887,
+   "V": 3.2269833335750637,
+   "first_order": 8.156380891642193,
+   "constant_rule": 8.52664097585422
+  },
+  "Crescendo": {
+   "name": "Crescendo",
+   "exact": 14.600448548249892,
+   "exact_constant": 15.689570166888153,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 14.551606005560233,
+   "V": 4.728419199088355,
+   "first_order": 14.47688860130694,
+   "constant_rule": 15.53489397659512
+  },
+  "Fisher": {
+   "name": "Fisher",
+   "exact": 17.107643570732105,
+   "exact_constant": 19.066406186186008,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 16.984936151752226,
+   "V": 5.040956020217763,
+   "first_order": 17.012134668412852,
+   "constant_rule": 18.987980427727415
+  },
+  "Pista": {
+   "name": "Pista",
+   "exact": 14.395746738689759,
+   "exact_constant": 15.799353043881691,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 14.282673632827887,
+   "V": 4.424906463557343,
+   "first_order": 13.910005853496775,
+   "constant_rule": 15.084750708167892
+  },
+  "Rigid": {
+   "name": "Rigid",
+   "exact": 12.890070391887742,
+   "exact_constant": 13.848875840275525,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 12.8687697144359,
+   "V": 4.833489723726355,
+   "first_order": 12.962778861600196,
+   "constant_rule": 13.923037942736638
+  },
+  "Rigidcl": {
+   "name": "Rigidcl",
+   "exact": 12.728586520001766,
+   "exact_constant": 13.673390319521488,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 12.706455939355832,
+   "V": 4.770998279228431,
+   "first_order": 12.78157708973364,
+   "constant_rule": 13.72077362373645
+  },
+  "Stratos": {
+   "name": "Stratos",
+   "exact": 11.907629435557402,
+   "exact_constant": 12.538884057021294,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 11.87239047512888,
+   "V": 4.056905272310969,
+   "first_order": 11.597841280557505,
+   "constant_rule": 12.164763660248788
+  },
+  "Yellow": {
+   "name": "Yellow",
+   "exact": 10.626892479471907,
+   "exact_constant": 11.22155358280124,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 10.599161400672362,
+   "V": 3.5930561283037905,
+   "first_order": 10.288769328546348,
+   "constant_rule": 10.816201697953561
+  },
+  "Gyro": {
+   "name": "Gyro",
+   "exact": 16.042445625201402,
+   "exact_constant": 17.617098399604238,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 15.899859818173782,
+   "V": 3.593179181997998,
+   "first_order": 15.452253742607367,
+   "constant_rule": 16.716345474498002
+  },
+  "Balanceassistv1": {
+   "name": "Balanceassistv1",
+   "exact": 6.551100673374191,
+   "exact_constant": 6.70131034288329,
+   "edge": "fold",
+   "valid": true,
+   "second_order": 6.550365688252509,
+   "V": 3.179259277102784,
+   "first_order": 6.369153823937112,
+   "constant_rule": 6.504998925202232
+  }
+ }
+}

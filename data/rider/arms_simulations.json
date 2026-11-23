@@ -1,0 +1,110 @@
+[
+ {
+  "V": 4.3,
+  "lean_deg": 6.0,
+  "k": 0.0,
+  "c": 0.0,
+  "max_real_eigenvalue": -0.19933908095402234,
+  "predicted_stable": true,
+  "fell": false,
+  "t_end": 60.0,
+  "lean_end_deg": 6.001523560134173,
+  "agrees": true
+ },
+ {
+  "V": 4.3,
+  "lean_deg": 6.0,
+  "k": 2.0,
+  "c": 0.0,
+  "max_real_eigenvalue": -0.17505036921000652,
+  "predicted_stable": true,
+  "fell": false,
+  "t_end": 60.0,
+  "lean_end_deg": 6.004215874453331,
+  "agrees": true
+ },
+ {
+  "V": 4.3,
+  "lean_deg": 6.0,
+  "k": 4.0,
+  "c": 0.0,
+  "max_real_eigenvalue": 0.3120845132951826,
+  "predicted_stable": false,
+  "fell": true,
+  "t_end": 15.55,
+  "lean_end_deg": 45.565967219343264,
+  "agrees": true
+ },
+ {
+  "V": 3.6,
+  "lean_deg": 4.0,
+  "k": 3.0,
+  "c": 0.0,
+  "max_real_eigenvalue": -0.31526610932406557,
+  "predicted_stable": true,
+  "fell": false,
+  "t_end": 60.0,
+  "lean_end_deg": 4.001787838456456,
+  "agrees": true
+ },
+ {
+  "V": 3.6,
+  "lean_deg": 4.0,
+  "k": 0.0,
+  "c": 0.0,
+  "max_real_eigenvalue": 0.8558072931495062,
+  "predicted_stable": false,
+  "fell": true,
+  "t_end": 16.25,
+  "lean_end_deg": -41.673180651386836,
+  "agrees": true
+ },
+ {
+  "V": 5.0,
+  "lean_deg": 10.0,
+  "k": 0.0,
+  "c": 4.0,
+  "max_real_eigenvalue": -0.2157020412962136,
+  "predicted_stable": true,
+  "fell": false,
+  "t_end": 60.0,
+  "lean_end_deg": 10.00948433615526,
+  "agrees": true
+ },
+ {
+  "V": 4.0,
+  "lean_deg": 10.0,
+  "k": 0.0,
+  "c": 4.0,
+  "max_real_eigenvalue": 0.5863960997275668,
+  "predicted_stable": false,
+  "fell": true,
+  "t_end": 8.65,
+  "lean_end_deg": 45.3543100129494,
+  "agrees": true
+ },
+ {
+  "V": 4.5,
+  "lean_deg": 0.5,
+  "k": 59.4,
+  "c": 1.81,
+  "max_real_eigenvalue": 2.4528909541607384,
+  "predicted_stable": false,
+  "fell": true,
+  "t_end": 2.5,
+  "lean_end_deg": 42.46808477820453,
+  "agrees": true
+ },
+ {
+  "V": 4.5,
+  "lean_deg": 0.5,
+  "k": 1053.4,
+  "c": 19.28,
+  "max_real_eigenvalue": 3.0827539831378057,
+  "predicted_stable": false,
+  "fell": true,
+  "t_end": 2.0,
+  "lean_end_deg": 43.37678912417922,
+  "agrees": true
+ }
+]

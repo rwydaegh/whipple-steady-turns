@@ -1,0 +1,2036 @@
+{
+ "quick": false,
+ "rows": [
+  {
+   "where": "Sect. 5.2 Region of the benchmark bicycle",
+   "quantity": "benchmark v_w (m/s)",
+   "paper": "4.292",
+   "independent": 4.292382536341107,
+   "difference": 0.00038253634110674284,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 5.2 Region of the benchmark bicycle",
+   "quantity": "benchmark v_c (m/s)",
+   "paper": "6.024",
+   "independent": 6.0242620153883655,
+   "difference": 0.00026201538836545524,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 8.2 Tip speed",
+   "quantity": "benchmark V_a3 (m/s)",
+   "paper": "2.761",
+   "independent": 2.760801922781425,
+   "difference": -0.0001980772185752322,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 4 Background",
+   "quantity": "benchmark zero-speed rate 1 (1/s)",
+   "paper": "3.13",
+   "independent": 3.131643247906555,
+   "difference": 0.001643247906554901,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 4 Background",
+   "quantity": "benchmark zero-speed rate 2 (1/s)",
+   "paper": "5.53",
+   "independent": 5.530943717653935,
+   "difference": 0.0009437176539348613,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "A v_w (m/s)",
+   "paper": "4.805",
+   "independent": 4.804625275391214,
+   "difference": -0.0003747246087852929,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "A v_c (m/s)",
+   "paper": "6.105",
+   "independent": 6.105215472291163,
+   "difference": 0.00021547229116247735,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "B v_w (m/s)",
+   "paper": "4.805",
+   "independent": 4.804625275391214,
+   "difference": -0.0003747246087852929,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "B v_c (m/s)",
+   "paper": "6.105",
+   "independent": 6.105215472291163,
+   "difference": 0.00021547229116247735,
+   "agrees": true
+  },
+  {
+   "where": "Eq. (Va3)",
+   "quantity": "V_a3 closed form against root of upright a3",
+   "paper": "exact",
+   "independent": 2.6645352591003757e-15,
+   "difference": 2.6645352591003757e-15,
+   "agrees": true,
+   "tol": 1e-10
+  },
+  {
+   "where": "Eq. (rider-kc)",
+   "quantity": "kappa_c closed form against elimination",
+   "paper": "exact",
+   "independent": 4.163336342344337e-16,
+   "difference": 4.163336342344337e-16,
+   "agrees": true,
+   "tol": 1e-12
+  },
+  {
+   "where": "Sect. 13.1 Spring and damper",
+   "quantity": "benchmark kappa_c (N m s^2/rad/m^2)",
+   "paper": "0.1946",
+   "independent": 0.1945735268573518,
+   "difference": -2.647314264819789e-05,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 13.1 Spring and damper",
+   "quantity": "benchmark k0 (N m/rad)",
+   "paper": "7.061",
+   "independent": 7.061410452507777,
+   "difference": 0.0004104525077774923,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 13.1 Spring and damper",
+   "quantity": "benchmark k* (N m/rad)",
+   "paper": "5.578",
+   "independent": 5.578365727342799,
+   "difference": 0.00036572734279882724,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 13.1 Spring and damper",
+   "quantity": "upright a4 at V_a3 with k = k*",
+   "paper": "exact",
+   "independent": 4.857106781442466e-14,
+   "difference": 4.857106781442466e-14,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Sect. S rider spring",
+   "quantity": "benchmark c* (N m s/rad)",
+   "paper": "14.17",
+   "independent": 14.166283822117897,
+   "difference": -0.003716177882102656,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 13.1 Spring and damper",
+   "quantity": "measured sets: smallest k* (N m/rad)",
+   "paper": "0.98",
+   "independent": 0.9756040793995103,
+   "difference": -0.004395920600489656,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 13.1 Spring and damper",
+   "quantity": "measured sets: largest k* (N m/rad)",
+   "paper": "15.1",
+   "independent": 15.068774940265314,
+   "difference": -0.0312250597346857,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 13.1 Spring and damper",
+   "quantity": "measured sets: median k* (N m/rad)",
+   "paper": "5.2",
+   "independent": 5.206001505632715,
+   "difference": 0.006001505632714732,
+   "agrees": true
+  },
+  {
+   "where": "Sect. S rider spring",
+   "quantity": "measured sets: smallest c* (N m s/rad)",
+   "paper": "3.0",
+   "independent": 3.009217416869507,
+   "difference": 0.009217416869506945,
+   "agrees": true
+  },
+  {
+   "where": "Sect. S rider spring",
+   "quantity": "measured sets: largest c* (N m s/rad)",
+   "paper": "144",
+   "independent": 144.22677352944373,
+   "difference": 0.22677352944373297,
+   "agrees": true
+  },
+  {
+   "where": "Sect. S rider spring",
+   "quantity": "measured sets: median c* (N m s/rad)",
+   "paper": "12.5",
+   "independent": 12.457165168532823,
+   "difference": -0.042834831467176926,
+   "agrees": true
+  },
+  {
+   "where": "Theorem 1 (eq. fold)",
+   "quantity": "a4 against mu det d(T,H)/d(lean,steer), free rolling",
+   "paper": "exact",
+   "independent": 1.0315648450646301e-11,
+   "difference": 1.0315648450646301e-11,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Sect. 6.4 Constant speed",
+   "quantity": "a4 against mu_S det d(T,S)/d(lean,steer)",
+   "paper": "exact",
+   "independent": 7.457866978694649e-12,
+   "difference": 7.457866978694649e-12,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Eq. (pencil)",
+   "quantity": "quartic of the 2x2 pencil against the Jacobian, both plants",
+   "paper": "exact",
+   "independent": 6.270636715902984e-15,
+   "difference": 6.270636715902984e-15,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Eq. (family)",
+   "quantity": "speed feedback polynomial against lambda chi_H + gamma chi_S",
+   "paper": "exact",
+   "independent": 6.160102871728373e-15,
+   "difference": 6.160102871728373e-15,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Eq. (K)",
+   "quantity": "upright nonlinear Jacobian against the linear model",
+   "paper": "exact",
+   "independent": 3.0139975905082446e-15,
+   "difference": 3.0139975905082446e-15,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Eq. (power)",
+   "quantity": "dE/dt - T ddelta at random states (W)",
+   "paper": "exact",
+   "independent": 6.537270724749078e-13,
+   "difference": 6.537270724749078e-13,
+   "agrees": true,
+   "tol": 1e-10
+  },
+  {
+   "where": "Sect. 12.1 Exact invariances",
+   "quantity": "statement 1 total mass: turns and eigenvalues",
+   "paper": "exact",
+   "independent": 2.9320990080350384e-12,
+   "difference": 2.9320990080350384e-12,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Sect. 12.1 Exact invariances",
+   "quantity": "statement 2 wheel mass R to frame: turns and eigenvalues",
+   "paper": "exact",
+   "independent": 4.6629367034256575e-15,
+   "difference": 4.6629367034256575e-15,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Sect. 12.1 Exact invariances",
+   "quantity": "statement 2 wheel diametral inertia R to frame: turns and eigenvalues",
+   "paper": "exact",
+   "independent": 2.399941364386776e-16,
+   "difference": 2.399941364386776e-16,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Sect. 12.1 Exact invariances",
+   "quantity": "statement 2 wheel mass F to frame: turns and eigenvalues",
+   "paper": "exact",
+   "independent": 1.4279688542728763e-12,
+   "difference": 1.4279688542728763e-12,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Sect. 12.1 Exact invariances",
+   "quantity": "statement 2 wheel diametral inertia F to frame: turns and eigenvalues",
+   "paper": "exact",
+   "independent": 7.1552427103765655e-16,
+   "difference": 7.1552427103765655e-16,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Sect. 12.1 Exact invariances",
+   "quantity": "statement 3 mass on steer axis at z = -1.0: turns and eigenvalues",
+   "paper": "exact",
+   "independent": 7.185363415374013e-13,
+   "difference": 7.185363415374013e-13,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Sect. 12.1 Exact invariances",
+   "quantity": "statement 3 mass on steer axis at z = -0.6: turns and eigenvalues",
+   "paper": "exact",
+   "independent": 8.124612094206896e-13,
+   "difference": 8.124612094206896e-13,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Sect. 12.1 Exact invariances",
+   "quantity": "statement 3 mass on steer axis at z = -0.2: turns and eigenvalues",
+   "paper": "exact",
+   "independent": 2.219557870830613e-12,
+   "difference": 2.219557870830613e-12,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Sect. 12.1 Exact invariances",
+   "quantity": "statement (a) gravity: turns and eigenvalues",
+   "paper": "exact",
+   "independent": 2.2088997297942115e-12,
+   "difference": 2.2088997297942115e-12,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Sect. 12.1 Exact invariances",
+   "quantity": "statement (a) lengths: turns and eigenvalues",
+   "paper": "exact",
+   "independent": 2.6352253712502716e-12,
+   "difference": 2.6352253712502716e-12,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Sect. 12.1 Exact invariances",
+   "quantity": "statement (b) lengths, g and masses: turns and eigenvalues",
+   "paper": "exact",
+   "independent": 2.922773134628187e-12,
+   "difference": 2.922773134628187e-12,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Sect. S invariances (c)",
+   "quantity": "isotropic frame inertia: squared spin and steer torque",
+   "paper": "exact",
+   "independent": 0.0,
+   "difference": 0.0,
+   "agrees": true,
+   "tol": 1e-09
+  },
+  {
+   "where": "Sect. S invariances (d)",
+   "quantity": "roll inertias: relative change of tau3",
+   "paper": "exact",
+   "independent": 9.721579097288213e-11,
+   "difference": 9.721579097288213e-11,
+   "agrees": true,
+   "tol": 1e-06
+  },
+  {
+   "where": "Sect. S invariances",
+   "quantity": "benchmark: rank of d(M, f)/d(parameters)",
+   "paper": "18",
+   "independent": 18,
+   "difference": 0,
+   "agrees": true,
+   "singular_values_18_19": [
+    0.0003634108205734669,
+    2.612717189662721e-15
+   ]
+  },
+  {
+   "where": "Sect. S invariances",
+   "quantity": "Browser+Jason: rank of d(M, f)/d(parameters)",
+   "paper": "18",
+   "independent": 18,
+   "difference": 0,
+   "agrees": true,
+   "singular_values_18_19": [
+    0.0016938938938026325,
+    4.123549918790758e-15
+   ]
+  },
+  {
+   "where": "Sect. 5.2 Region of the benchmark bicycle",
+   "quantity": "benchmark BT lean (deg)",
+   "paper": "9.26",
+   "independent": 9.257244777417085,
+   "difference": -0.002755222582914385,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 8.2 Tip speed",
+   "quantity": "benchmark BT speed (m/s)",
+   "paper": "2.790",
+   "independent": 2.7895602902810728,
+   "difference": -0.0004397097189272614,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 5.2 Region of the benchmark bicycle",
+   "quantity": "benchmark BT steer torque (N m)",
+   "paper": "-0.858",
+   "independent": -0.8582541473927889,
+   "difference": -0.0002541473927889504,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "benchmark BT steer (rad)",
+   "paper": "0.226",
+   "independent": 0.2264663066834338,
+   "difference": 0.00046630668343378145,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "benchmark BT radius (m)",
+   "paper": "4.60",
+   "independent": 4.596791666212912,
+   "difference": -0.003208333787087625,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "benchmark BT a_y/g",
+   "paper": "0.173",
+   "independent": 0.17256299735228164,
+   "difference": -0.0004370026477183431,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "benchmark BT other eigenvalue 1 (1/s)",
+   "paper": "-8.50",
+   "independent": -8.501496648714427,
+   "difference": -0.001496648714427451,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "benchmark BT other eigenvalue 2 (1/s)",
+   "paper": "-0.408",
+   "independent": -0.4081825258137398,
+   "difference": -0.00018252581373984222,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 5.2 Region of the benchmark bicycle",
+   "quantity": "benchmark largest stable lean (deg)",
+   "paper": "12.47",
+   "independent": 12.472453219068203,
+   "difference": 0.0024532190682027277,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 5.2 Region of the benchmark bicycle",
+   "quantity": "benchmark largest stable lean at V (m/s)",
+   "paper": "4.54",
+   "independent": 4.535583546658013,
+   "difference": -0.004416453341987037,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 5.2 Region of the benchmark bicycle",
+   "quantity": "benchmark largest stable a_y/g",
+   "paper": "0.227",
+   "independent": 0.22659004614396575,
+   "difference": -0.00040995385603426193,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "benchmark largest stable a_y at V (m/s)",
+   "paper": "4.47",
+   "independent": 4.470963978099283,
+   "difference": 0.0009639780992829472,
+   "agrees": true
+  },
+  {
+   "where": "Sect. S speed feedback",
+   "quantity": "benchmark largest stable lean, constant speed (deg)",
+   "paper": "13.84",
+   "independent": 13.840201429907726,
+   "difference": 0.00020142990772598068,
+   "agrees": true
+  },
+  {
+   "where": "Sect. S speed feedback",
+   "quantity": "gamma of saturation (1/s)",
+   "paper": "0.113",
+   "independent": 0.11260521965073385,
+   "difference": -0.000394780349266155,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "A BT lean (deg)",
+   "paper": "12.04",
+   "independent": 12.036901372233077,
+   "difference": -0.0030986277669224904,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "A BT speed (m/s)",
+   "paper": "3.29",
+   "independent": 3.289032934178706,
+   "difference": -0.0009670658212939109,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "A BT steer torque (N m)",
+   "paper": "-0.296",
+   "independent": -0.2963811639191376,
+   "difference": -0.00038116391913761705,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "A largest stable lean (deg)",
+   "paper": "15.16",
+   "independent": 15.164513830016697,
+   "difference": 0.004513830016696474,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "A largest stable lean at V (m/s)",
+   "paper": "4.81",
+   "independent": 4.810402186011777,
+   "difference": 0.000402186011777772,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "A largest stable a_y/g",
+   "paper": "0.266",
+   "independent": 0.2656506546516418,
+   "difference": -0.00034934534835823206,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "A largest stable a_y at V (m/s)",
+   "paper": "4.73",
+   "independent": 4.729616253726785,
+   "difference": -0.0003837462732150243,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "B BT lean (deg)",
+   "paper": "12.50",
+   "independent": 12.503198448710473,
+   "difference": 0.00319844871047259,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "B BT speed (m/s)",
+   "paper": "3.34",
+   "independent": 3.3434950182021344,
+   "difference": 0.003495018202134492,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "B BT steer torque (N m)",
+   "paper": "-0.294",
+   "independent": -0.29413248907992534,
+   "difference": -0.00013248907992535752,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "B largest stable lean (deg)",
+   "paper": "16.07",
+   "independent": 16.073761548732296,
+   "difference": 0.0037615487322959495,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "B largest stable lean at V (m/s)",
+   "paper": "4.94",
+   "independent": 4.9445389734521035,
+   "difference": 0.004538973452103079,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "B largest stable a_y/g",
+   "paper": "0.282",
+   "independent": 0.282211414902982,
+   "difference": 0.00021141490298204335,
+   "agrees": true
+  },
+  {
+   "where": "Table S region",
+   "quantity": "B largest stable a_y at V (m/s)",
+   "paper": "4.87",
+   "independent": 4.872442563850286,
+   "difference": 0.0024425638502858504,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 13.1 Spring and damper",
+   "quantity": "benchmark largest stable lean at k = 0.4 k* (deg)",
+   "paper": "8.13",
+   "independent": 8.131309958087423,
+   "difference": 0.0013099580874218475,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 13.1 Spring and damper",
+   "quantity": "benchmark largest stable lean at k = 0.8 k* (deg)",
+   "paper": "4.04",
+   "independent": 4.035130150718069,
+   "difference": -0.004869849281931238,
+   "agrees": true
+  },
+  {
+   "where": "Table S trails",
+   "quantity": "trail where tau3(v_c) changes sign (mm)",
+   "paper": "146.2",
+   "independent": 146.22194102342826,
+   "difference": 0.02194102342826909,
+   "agrees": true
+  },
+  {
+   "where": "Table S trails",
+   "quantity": "opening trail, constant (mm)",
+   "paper": "162.5",
+   "independent": 162.50566736978968,
+   "difference": 0.005667369789676968,
+   "agrees": true
+  },
+  {
+   "where": "Table S trails",
+   "quantity": "lean at opening, constant (deg)",
+   "paper": "33.0",
+   "independent": 33.0493464339511,
+   "difference": 0.04934643395110072,
+   "agrees": true
+  },
+  {
+   "where": "Table S trails",
+   "quantity": "speed at opening, constant (m/s)",
+   "paper": "8.57",
+   "independent": 8.57410479944285,
+   "difference": 0.004104799442849583,
+   "agrees": true
+  },
+  {
+   "where": "Table S trails",
+   "quantity": "a_y/g at opening, constant",
+   "paper": "0.68",
+   "independent": 0.6794744795446312,
+   "difference": -0.0005255204553687998,
+   "agrees": true
+  },
+  {
+   "where": "Table S trails",
+   "quantity": "opening trail, free (mm)",
+   "paper": "198.9",
+   "independent": 198.85403697256913,
+   "difference": -0.045963027430872216,
+   "agrees": true
+  },
+  {
+   "where": "Table S trails",
+   "quantity": "lean at opening, free (deg)",
+   "paper": "33.3",
+   "independent": 33.25101048352311,
+   "difference": -0.04898951647688676,
+   "agrees": true
+  },
+  {
+   "where": "Table S trails",
+   "quantity": "speed at opening, free (m/s)",
+   "paper": "9.30",
+   "independent": 9.296431511106912,
+   "difference": -0.003568488893089139,
+   "agrees": true
+  },
+  {
+   "where": "Table S trails",
+   "quantity": "a_y/g at opening, free",
+   "paper": "0.68",
+   "independent": 0.6800439682308156,
+   "difference": 4.396823081553869e-05,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 5.2 Region of the benchmark bicycle",
+   "quantity": "largest steer torque of 136 stable grid turns (N m)",
+   "paper": "negative",
+   "independent": -8.227468253581109e-05,
+   "difference": null,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 3.3 Energy in a capsize",
+   "quantity": "potential energy drop from 12.6 to 45 deg (J)",
+   "paper": "215.5",
+   "independent": 214.68857712340878,
+   "difference": -0.811422876591223,
+   "agrees": false
+  },
+  {
+   "where": "Sect. 3.3 Energy in a capsize",
+   "quantity": "share of the drop taken by K_f (%)",
+   "paper": "99.4",
+   "independent": 99.38485676677664,
+   "difference": -0.015143233223369634,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 3.3 Energy in a capsize",
+   "quantity": "speed estimate sqrt(V0^2 + 2 g dh) (m/s)",
+   "paper": "5.02",
+   "independent": 5.01898467537451,
+   "difference": -0.0010153246254898107,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 3.3 Energy in a capsize",
+   "quantity": "rear-contact speed at 45 deg (m/s)",
+   "paper": "6.03",
+   "independent": 6.0265992490371065,
+   "difference": -0.003400750962893717,
+   "agrees": true
+  },
+  {
+   "where": "Sect. 3.3 Energy in a capsize",
+   "quantity": "mass-centre speed at 45 deg (m/s)",
+   "paper": "4.84",
+   "independent": 4.834538893539192,
+   "difference": -0.005461106460807663,
+   "agrees": false
+  },
+  {
+   "where": "Sect. 3.3 Energy in a capsize",
+   "quantity": "drift of H = E - T delta over the run (J)",
+   "paper": "exact",
+   "independent": -7.048583938740194e-12,
+   "difference": -7.048583938740194e-12,
+   "agrees": true,
+   "tol": 1e-08
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Balanceassistv1+Jason v_w (m/s)",
+   "paper": "4.08",
+   "independent": 4.077938697054713,
+   "difference": -0.002061302945286947,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Balanceassistv1+Jason v_c (m/s)",
+   "paper": "6.24",
+   "independent": 6.235135698271449,
+   "difference": -0.004864301728551013,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Balanceassistv1+Jason V_a3 (m/s)",
+   "paper": "3.10",
+   "independent": 3.1027138718782017,
+   "difference": 0.0027138718782016014,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Balanceassistv1+Jason tip V (m/s)",
+   "paper": "3.02",
+   "independent": 3.0228857975926267,
+   "difference": 0.0028857975926266377,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Balanceassistv1+Jason tip lean (deg)",
+   "paper": "7.42",
+   "independent": 7.418437586768923,
+   "difference": -0.0015624132310767536,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Balanceassistv1+Jason largest stable lean (deg)",
+   "paper": "8.98",
+   "independent": 8.977290374264898,
+   "difference": -0.00270962573510225,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Balanceassistv1+Jason at V (m/s)",
+   "paper": "4.45",
+   "independent": 4.449707212760265,
+   "difference": -0.0002927872397355813,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Aurelia v_w (m/s)",
+   "paper": "4.79",
+   "independent": 4.793534835861217,
+   "difference": 0.003534835861216834,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Aurelia v_c (m/s)",
+   "paper": "6.59",
+   "independent": 6.594031152494386,
+   "difference": 0.0040311524943863475,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Aurelia V_a3 (m/s)",
+   "paper": "3.44",
+   "independent": 3.4406646012374664,
+   "difference": 0.0006646012374664778,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Aurelia tip V (m/s)",
+   "paper": "3.34",
+   "independent": 3.338944641531608,
+   "difference": -0.001055358468391887,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Aurelia tip lean (deg)",
+   "paper": "10.07",
+   "independent": 10.073226777913444,
+   "difference": 0.0032267779134436125,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Aurelia largest stable lean (deg)",
+   "paper": "12.07",
+   "independent": 12.070891867784628,
+   "difference": 0.0008918677846274647,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Aurelia at V (m/s)",
+   "paper": "4.80",
+   "independent": 4.80487587513353,
+   "difference": 0.004875875133530272,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Charlie v_w (m/s)",
+   "paper": "5.04",
+   "independent": 5.042132597058898,
+   "difference": 0.0021325970588979004,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Charlie v_c (m/s)",
+   "paper": "7.41",
+   "independent": 7.409515321723279,
+   "difference": -0.00048467827672116215,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Charlie V_a3 (m/s)",
+   "paper": "3.64",
+   "independent": 3.638612561466264,
+   "difference": -0.0013874385337362405,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Charlie tip V (m/s)",
+   "paper": "3.50",
+   "independent": 3.503501776844172,
+   "difference": 0.0035017768441720776,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Charlie tip lean (deg)",
+   "paper": "10.73",
+   "independent": 10.731495135472565,
+   "difference": 0.001495135472564968,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Charlie largest stable lean (deg)",
+   "paper": "13.43",
+   "independent": 13.430010649327537,
+   "difference": 1.0649327537137765e-05,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Charlie at V (m/s)",
+   "paper": "5.37",
+   "independent": 5.367542930110752,
+   "difference": -0.002457069889247876,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Chris v_w (m/s)",
+   "paper": "4.82",
+   "independent": 4.820724371593602,
+   "difference": 0.0007243715936020578,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Chris v_c (m/s)",
+   "paper": "6.85",
+   "independent": 6.852575954028789,
+   "difference": 0.0025759540287895177,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Chris V_a3 (m/s)",
+   "paper": "3.49",
+   "independent": 3.4926999641115666,
+   "difference": 0.0026999641115663664,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Chris tip V (m/s)",
+   "paper": "3.39",
+   "independent": 3.3928006732157527,
+   "difference": 0.0028006732157526137,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Chris tip lean (deg)",
+   "paper": "10.28",
+   "independent": 10.284276189543148,
+   "difference": 0.004276189543148234,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Chris largest stable lean (deg)",
+   "paper": "12.48",
+   "independent": 12.479713230111788,
+   "difference": -0.00028676988821274563,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Chris at V (m/s)",
+   "paper": "4.98",
+   "independent": 4.975253396750347,
+   "difference": -0.0047466032496537025,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Jason v_w (m/s)",
+   "paper": "5.14",
+   "independent": 5.142594758378473,
+   "difference": 0.0025947583784731165,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Jason v_c (m/s)",
+   "paper": "7.72",
+   "independent": 7.721693572873239,
+   "difference": 0.0016935728732390132,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Jason V_a3 (m/s)",
+   "paper": "3.68",
+   "independent": 3.6785205863754995,
+   "difference": -0.0014794136245006584,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Jason tip V (m/s)",
+   "paper": "3.55",
+   "independent": 3.5537192709592116,
+   "difference": 0.0037192709592117623,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Jason tip lean (deg)",
+   "paper": "10.98",
+   "independent": 10.981487255256695,
+   "difference": 0.0014872552566949082,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Jason largest stable lean (deg)",
+   "paper": "14.06",
+   "independent": 14.057032723817711,
+   "difference": -0.0029672761822894245,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Jason at V (m/s)",
+   "paper": "5.60",
+   "independent": 5.6032523060695825,
+   "difference": 0.003252306069582822,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Jason72(Hess2012) v_w (m/s)",
+   "paper": "5.01",
+   "independent": 5.012026275039937,
+   "difference": 0.002026275039937353,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Jason72(Hess2012) v_c (m/s)",
+   "paper": "7.15",
+   "independent": 7.151872878351589,
+   "difference": 0.0018728783515884473,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Jason72(Hess2012) V_a3 (m/s)",
+   "paper": "3.75",
+   "independent": 3.749759849079509,
+   "difference": -0.00024015092049101128,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Jason72(Hess2012) tip V (m/s)",
+   "paper": "3.60",
+   "independent": 3.5973609475930237,
+   "difference": -0.002639052406976372,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Jason72(Hess2012) tip lean (deg)",
+   "paper": "10.90",
+   "independent": 10.903064747839677,
+   "difference": 0.003064747839676585,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Jason72(Hess2012) largest stable lean (deg)",
+   "paper": "13.02",
+   "independent": 13.023791043952203,
+   "difference": 0.00379104395220331,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Jason72(Hess2012) at V (m/s)",
+   "paper": "5.19",
+   "independent": 5.189622789599166,
+   "difference": -0.0003772104008348265,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Luke v_w (m/s)",
+   "paper": "5.13",
+   "independent": 5.131582948115938,
+   "difference": 0.0015829481159377323,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Luke v_c (m/s)",
+   "paper": "7.53",
+   "independent": 7.531449091958309,
+   "difference": 0.001449091958308557,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Luke V_a3 (m/s)",
+   "paper": "3.63",
+   "independent": 3.6328851314694623,
+   "difference": 0.002885131469462454,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Luke tip V (m/s)",
+   "paper": "3.50",
+   "independent": 3.5031789895208276,
+   "difference": 0.003178989520827624,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Luke tip lean (deg)",
+   "paper": "10.81",
+   "independent": 10.80769238710937,
+   "difference": -0.0023076128906307503,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Luke largest stable lean (deg)",
+   "paper": "13.78",
+   "independent": 13.776652030625108,
+   "difference": -0.0033479693748912354,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Luke at V (m/s)",
+   "paper": "5.48",
+   "independent": 5.481915679164252,
+   "difference": 0.0019156791642513937,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Mont v_w (m/s)",
+   "paper": "5.33",
+   "independent": 5.327610647639593,
+   "difference": -0.002389352360407493,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Mont v_c (m/s)",
+   "paper": "8.18",
+   "independent": 8.179665916483494,
+   "difference": -0.0003340835165062117,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Mont V_a3 (m/s)",
+   "paper": "3.81",
+   "independent": 3.806903029548115,
+   "difference": -0.0030969704518848395,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Mont tip V (m/s)",
+   "paper": "3.65",
+   "independent": 3.6474986257524575,
+   "difference": -0.002501374247542376,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Mont tip lean (deg)",
+   "paper": "11.35",
+   "independent": 11.349969955906756,
+   "difference": -3.0044093243475345e-05,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Mont largest stable lean (deg)",
+   "paper": "14.86",
+   "independent": 14.863425633796057,
+   "difference": 0.0034256337960574257,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browser+Mont at V (m/s)",
+   "paper": "5.93",
+   "independent": 5.934107284385534,
+   "difference": 0.0041072843855340935,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browserins+Jason v_w (m/s)",
+   "paper": "5.25",
+   "independent": 5.251058515614224,
+   "difference": 0.001058515614223765,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browserins+Jason v_c (m/s)",
+   "paper": "7.73",
+   "independent": 7.732501255014245,
+   "difference": 0.0025012550142449186,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browserins+Jason V_a3 (m/s)",
+   "paper": "3.85",
+   "independent": 3.8496044111429404,
+   "difference": -0.00039558885705970326,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browserins+Jason tip V (m/s)",
+   "paper": "3.69",
+   "independent": 3.6856923003462754,
+   "difference": -0.004307699653724573,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browserins+Jason tip lean (deg)",
+   "paper": "11.35",
+   "independent": 11.351367944408915,
+   "difference": 0.0013679444089156334,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browserins+Jason largest stable lean (deg)",
+   "paper": "14.17",
+   "independent": 14.169966877330456,
+   "difference": -3.312266954402787e-05,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Browserins+Jason at V (m/s)",
+   "paper": "5.63",
+   "independent": 5.633161580665326,
+   "difference": 0.0031615806653260137,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Crescendo+Jason v_w (m/s)",
+   "paper": "5.58",
+   "independent": 5.580460987698117,
+   "difference": 0.00046098769811653284,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Crescendo+Jason v_c (m/s)",
+   "paper": "9.04",
+   "independent": 9.035483700699073,
+   "difference": -0.004516299300926008,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Crescendo+Jason V_a3 (m/s)",
+   "paper": "4.32",
+   "independent": 4.322402442293878,
+   "difference": 0.002402442293877982,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Crescendo+Jason tip V (m/s)",
+   "paper": "4.19",
+   "independent": 4.185658182256306,
+   "difference": -0.004341817743694243,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Crescendo+Jason tip lean (deg)",
+   "paper": "13.87",
+   "independent": 13.872171630957013,
+   "difference": 0.0021716309570134484,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Crescendo+Jason largest stable lean (deg)",
+   "paper": "17.26",
+   "independent": 17.2554059633103,
+   "difference": -0.004594036689702818,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Crescendo+Jason at V (m/s)",
+   "paper": "6.50",
+   "independent": 6.498481058112251,
+   "difference": -0.0015189418877490368,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "DelftBrowser+Arend(Moore2012) v_w (m/s)",
+   "paper": "5.10",
+   "independent": 5.101916720081914,
+   "difference": 0.001916720081914569,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "DelftBrowser+Arend(Moore2012) v_c (m/s)",
+   "paper": "7.34",
+   "independent": 7.33934757235466,
+   "difference": -0.0006524276453401257,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "DelftBrowser+Arend(Moore2012) V_a3 (m/s)",
+   "paper": "3.93",
+   "independent": 3.928893597569109,
+   "difference": -0.001106402430891329,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "DelftBrowser+Arend(Moore2012) tip V (m/s)",
+   "paper": "3.73",
+   "independent": 3.7330869458840943,
+   "difference": 0.0030869458840943054,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "DelftBrowser+Arend(Moore2012) tip lean (deg)",
+   "paper": "10.63",
+   "independent": 10.626595234597321,
+   "difference": -0.0034047654026796437,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "DelftBrowser+Arend(Moore2012) largest stable lean (deg)",
+   "paper": "12.53",
+   "independent": 12.526694046235702,
+   "difference": -0.003305953764296987,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "DelftBrowser+Arend(Moore2012) at V (m/s)",
+   "paper": "5.31",
+   "independent": 5.306037281996039,
+   "difference": -0.003962718003960752,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "DelftBrowser+Jason(Moore2012) v_w (m/s)",
+   "paper": "4.76",
+   "independent": 4.764869239931019,
+   "difference": 0.004869239931019287,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "DelftBrowser+Jason(Moore2012) v_c (m/s)",
+   "paper": "6.42",
+   "independent": 6.4203538283003905,
+   "difference": 0.00035382830039054625,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "DelftBrowser+Jason(Moore2012) V_a3 (m/s)",
+   "paper": "3.60",
+   "independent": 3.599877049829125,
+   "difference": -0.0001229501708750469,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "DelftBrowser+Jason(Moore2012) tip V (m/s)",
+   "paper": "3.46",
+   "independent": 3.4578213842015093,
+   "difference": -0.0021786157984906573,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "DelftBrowser+Jason(Moore2012) tip lean (deg)",
+   "paper": "9.73",
+   "independent": 9.727096806910527,
+   "difference": -0.0029031930894731772,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "DelftBrowser+Jason(Moore2012) largest stable lean (deg)",
+   "paper": "11.10",
+   "independent": 11.10482829679702,
+   "difference": 0.00482829679702057,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "DelftBrowser+Jason(Moore2012) at V (m/s)",
+   "paper": "4.67",
+   "independent": 4.6693236832123715,
+   "difference": -0.0006763167876284726,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Fisher+Jason72(Hess2012) v_w (m/s)",
+   "paper": "5.18",
+   "independent": 5.184053486859858,
+   "difference": 0.004053486859858069,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Fisher+Jason72(Hess2012) v_c (m/s)",
+   "paper": "8.40",
+   "independent": 8.404807348669985,
+   "difference": 0.00480734866998489,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Fisher+Jason72(Hess2012) V_a3 (m/s)",
+   "paper": "4.12",
+   "independent": 4.1183723208448315,
+   "difference": -0.0016276791551685932,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Fisher+Jason72(Hess2012) tip V (m/s)",
+   "paper": "3.95",
+   "independent": 3.9495424641237955,
+   "difference": -0.0004575358762046733,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Fisher+Jason72(Hess2012) tip lean (deg)",
+   "paper": "12.71",
+   "independent": 12.710337473410183,
+   "difference": 0.00033747341018219856,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Fisher+Jason72(Hess2012) largest stable lean (deg)",
+   "paper": "15.56",
+   "independent": 15.559451427164309,
+   "difference": -0.000548572835691985,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Fisher+Jason72(Hess2012) at V (m/s)",
+   "paper": "6.01",
+   "independent": 6.007323961167667,
+   "difference": -0.0026760388323330275,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Gyro+Child v_w (m/s)",
+   "paper": "3.49",
+   "independent": 3.4881342805487754,
+   "difference": -0.0018657194512248232,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Gyro+Child v_c (m/s)",
+   "paper": "5.95",
+   "independent": 5.945320268631354,
+   "difference": -0.004679731368645967,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Gyro+Child V_a3 (m/s)",
+   "paper": "2.71",
+   "independent": 2.71169960748954,
+   "difference": 0.0016996074895399005,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Gyro+Child tip V (m/s)",
+   "paper": "2.70",
+   "independent": 2.6963654287683596,
+   "difference": -0.003634571231640571,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Gyro+Child tip lean (deg)",
+   "paper": "12.74",
+   "independent": 12.739103959643998,
+   "difference": -0.0008960403560021035,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Gyro+Child largest stable lean (deg)",
+   "paper": "16.15",
+   "independent": 16.150958598415254,
+   "difference": 0.0009585984152558069,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Gyro+Child at V (m/s)",
+   "paper": "4.27",
+   "independent": 4.274010911268379,
+   "difference": 0.004010911268379047,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Pista+Jason72(Hess2012) v_w (m/s)",
+   "paper": "4.81",
+   "independent": 4.808744553410687,
+   "difference": -0.0012554465893126476,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Pista+Jason72(Hess2012) v_c (m/s)",
+   "paper": "7.73",
+   "independent": 7.734640141818318,
+   "difference": 0.004640141818317289,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Pista+Jason72(Hess2012) V_a3 (m/s)",
+   "paper": "3.93",
+   "independent": 3.929746199047946,
+   "difference": -0.000253800952054295,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Pista+Jason72(Hess2012) tip V (m/s)",
+   "paper": "3.78",
+   "independent": 3.7802563633626023,
+   "difference": 0.00025636336260248527,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Pista+Jason72(Hess2012) tip lean (deg)",
+   "paper": "11.55",
+   "independent": 11.55400653715042,
+   "difference": 0.004006537150418765,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Pista+Jason72(Hess2012) largest stable lean (deg)",
+   "paper": "13.55",
+   "independent": 13.5472947110159,
+   "difference": -0.002705288984101273,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Pista+Jason72(Hess2012) at V (m/s)",
+   "paper": "5.45",
+   "independent": 5.4464836868117565,
+   "difference": -0.003516313188243636,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigid+Jason v_w (m/s)",
+   "paper": "5.78",
+   "independent": 5.7755779257999444,
+   "difference": -0.004422074200055803,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigid+Jason v_c (m/s)",
+   "paper": "10.14",
+   "independent": 10.138621526193864,
+   "difference": -0.0013784738061364266,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigid+Jason V_a3 (m/s)",
+   "paper": "4.21",
+   "independent": 4.212915416632418,
+   "difference": 0.002915416632418122,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigid+Jason tip V (m/s)",
+   "paper": "4.07",
+   "independent": 4.074207259471899,
+   "difference": 0.00420725947189915,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigid+Jason tip lean (deg)",
+   "paper": "12.93",
+   "independent": 12.932483253793016,
+   "difference": 0.0024832537930166154,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigid+Jason largest stable lean (deg)",
+   "paper": "18.31",
+   "independent": 18.313003296792864,
+   "difference": 0.003003296792865484,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigid+Jason at V (m/s)",
+   "paper": "7.41",
+   "independent": 7.405716303418692,
+   "difference": -0.004283696581308227,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigid+rider(Schwab2013) v_w (m/s)",
+   "paper": "6.20",
+   "independent": 6.201020731659482,
+   "difference": 0.0010207316594819105,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigid+rider(Schwab2013) v_c (m/s)",
+   "paper": "10.85",
+   "independent": 10.846330919409045,
+   "difference": -0.003669080590954721,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigid+rider(Schwab2013) V_a3 (m/s)",
+   "paper": "4.57",
+   "independent": 4.567118605447528,
+   "difference": -0.0028813945524719387,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigid+rider(Schwab2013) tip V (m/s)",
+   "paper": "4.36",
+   "independent": 4.363855194933199,
+   "difference": 0.00385519493319908,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigid+rider(Schwab2013) tip lean (deg)",
+   "paper": "14.73",
+   "independent": 14.726890293568013,
+   "difference": -0.003109706431986936,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigid+rider(Schwab2013) largest stable lean (deg)",
+   "paper": "21.33",
+   "independent": 21.32831948966719,
+   "difference": -0.0016805103328074722,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigid+rider(Schwab2013) at V (m/s)",
+   "paper": "8.12",
+   "independent": 8.118964224867696,
+   "difference": -0.0010357751323031295,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigidcl+Charlie v_w (m/s)",
+   "paper": "5.67",
+   "independent": 5.6698700336182055,
+   "difference": -0.00012996638179441078,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigidcl+Charlie v_c (m/s)",
+   "paper": "9.69",
+   "independent": 9.68793439282395,
+   "difference": -0.002065607176049866,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigidcl+Charlie V_a3 (m/s)",
+   "paper": "4.28",
+   "independent": 4.276510472001432,
+   "difference": -0.003489527998568498,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigidcl+Charlie tip V (m/s)",
+   "paper": "4.11",
+   "independent": 4.109393493596554,
+   "difference": -0.0006065064034466161,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigidcl+Charlie tip lean (deg)",
+   "paper": "12.90",
+   "independent": 12.897279968479438,
+   "difference": -0.002720031520562216,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigidcl+Charlie largest stable lean (deg)",
+   "paper": "17.31",
+   "independent": 17.309784754635217,
+   "difference": -0.00021524536478167988,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigidcl+Charlie at V (m/s)",
+   "paper": "7.02",
+   "independent": 7.016157141988142,
+   "difference": -0.003842858011857686,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigidcl+Luke v_w (m/s)",
+   "paper": "5.77",
+   "independent": 5.7707196458673655,
+   "difference": 0.0007196458673659478,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigidcl+Luke v_c (m/s)",
+   "paper": "9.88",
+   "independent": 9.88324540194005,
+   "difference": 0.003245401940048964,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigidcl+Luke V_a3 (m/s)",
+   "paper": "4.27",
+   "independent": 4.273935605397617,
+   "difference": 0.003935605397617614,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigidcl+Luke tip V (m/s)",
+   "paper": "4.11",
+   "independent": 4.112430854278263,
+   "difference": 0.0024308542782627285,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigidcl+Luke tip lean (deg)",
+   "paper": "13.00",
+   "independent": 13.00090170977834,
+   "difference": 0.0009017097783399208,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigidcl+Luke largest stable lean (deg)",
+   "paper": "17.91",
+   "independent": 17.90934735284434,
+   "difference": -0.0006526471556611568,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Rigidcl+Luke at V (m/s)",
+   "paper": "7.22",
+   "independent": 7.223438496319998,
+   "difference": 0.0034384963199984853,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Stratos+Jason v_w (m/s)",
+   "paper": "4.75",
+   "independent": 4.752513137217146,
+   "difference": 0.0025131372171456334,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Stratos+Jason v_c (m/s)",
+   "paper": "8.40",
+   "independent": 8.397151307649725,
+   "difference": -0.0028486923502750727,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Stratos+Jason V_a3 (m/s)",
+   "paper": "3.34",
+   "independent": 3.3401594738469926,
+   "difference": 0.00015947384699277478,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Stratos+Jason tip V (m/s)",
+   "paper": "3.37",
+   "independent": 3.3719259701808704,
+   "difference": 0.0019259701808702623,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Stratos+Jason tip lean (deg)",
+   "paper": "10.48",
+   "independent": 10.47981594226704,
+   "difference": -0.00018405773296059635,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Stratos+Jason largest stable lean (deg)",
+   "paper": "14.84",
+   "independent": 14.835877483183284,
+   "difference": -0.004122516816716271,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Stratos+Jason at V (m/s)",
+   "paper": "6.07",
+   "independent": 6.066265473811682,
+   "difference": -0.0037345261883183767,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellow+Jason v_w (m/s)",
+   "paper": "4.54",
+   "independent": 4.536316338043239,
+   "difference": -0.003683661956761064,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellow+Jason v_c (m/s)",
+   "paper": "7.05",
+   "independent": 7.049315295485135,
+   "difference": -0.0006847045148647979,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellow+Jason V_a3 (m/s)",
+   "paper": "3.26",
+   "independent": 3.2579334844475687,
+   "difference": -0.002066515552431092,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellow+Jason tip V (m/s)",
+   "paper": "3.23",
+   "independent": 3.229645254167292,
+   "difference": -0.00035474583270778126,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellow+Jason tip lean (deg)",
+   "paper": "9.09",
+   "independent": 9.086339907887533,
+   "difference": -0.003660092112466984,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellow+Jason largest stable lean (deg)",
+   "paper": "11.57",
+   "independent": 11.57499128411161,
+   "difference": 0.004991284111609318,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellow+Jason at V (m/s)",
+   "paper": "5.08",
+   "independent": 5.0759314948631395,
+   "difference": -0.004068505136860523,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellow+Jason72(Hess2012) v_w (m/s)",
+   "paper": "4.33",
+   "independent": 4.334076087504541,
+   "difference": 0.004076087504540915,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellow+Jason72(Hess2012) v_c (m/s)",
+   "paper": "6.09",
+   "independent": 6.0874723763392575,
+   "difference": -0.0025276236607423286,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellow+Jason72(Hess2012) V_a3 (m/s)",
+   "paper": "3.39",
+   "independent": 3.3926288050737217,
+   "difference": 0.0026288050737215407,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellow+Jason72(Hess2012) tip V (m/s)",
+   "paper": "3.29",
+   "independent": 3.2879271272523622,
+   "difference": -0.0020728727476377884,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellow+Jason72(Hess2012) tip lean (deg)",
+   "paper": "8.89",
+   "independent": 8.886296943379861,
+   "difference": -0.0037030566201394777,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellow+Jason72(Hess2012) largest stable lean (deg)",
+   "paper": "10.02",
+   "independent": 10.019017011250952,
+   "difference": -0.0009829887490475642,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellow+Jason72(Hess2012) at V (m/s)",
+   "paper": "4.39",
+   "independent": 4.385565945998733,
+   "difference": -0.0044340540012663965,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellowrev+Jason v_w (m/s)",
+   "paper": "5.82",
+   "independent": 5.8246428576140685,
+   "difference": 0.004642857614068241,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellowrev+Jason v_c (m/s)",
+   "paper": "14.24",
+   "independent": 14.238602971413549,
+   "difference": -0.0013970285864512988,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellowrev+Jason V_a3 (m/s)",
+   "paper": "4.13",
+   "independent": 4.1307717700124025,
+   "difference": 0.0007717700124025839,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellowrev+Jason tip V (m/s)",
+   "paper": "4.21",
+   "independent": 4.206975959586066,
+   "difference": -0.003024040413934337,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellowrev+Jason tip lean (deg)",
+   "paper": "16.38",
+   "independent": 16.38102534946289,
+   "difference": 0.0010253494628926774,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellowrev+Jason largest stable lean (deg)",
+   "paper": "30.40",
+   "independent": 30.398702758887705,
+   "difference": -0.00129724111229379,
+   "agrees": true
+  },
+  {
+   "where": "Table S measured-sets",
+   "quantity": "Yellowrev+Jason at V (m/s)",
+   "paper": "10.83",
+   "independent": 10.831224187310625,
+   "difference": 0.0012241873106244583,
+   "agrees": true
+  }
+ ]
+}

@@ -1,0 +1,207 @@
+{
+ "riderless Browser zero-Hopf tip (V m/s, lean deg)": [
+  3.8642634847468917,
+  7.444929534745679
+ ],
+ "riderless Browser zero-Hopf tip / v_w": 0.9210768771564791,
+ "Silver upright (v_w, v_c)": [
+  3.9858318447106185,
+  7.895609953611054
+ ],
+ "tip speed range (m/s)": [
+  2.6963654287683716,
+  4.363855194933233
+ ],
+ "tip lean range (deg)": [
+  7.41843758676893,
+  16.38102534946303
+ ],
+ "all 23 tips are BT points": true,
+ "all 23 boundaries otherwise stable": true,
+ "22 sets: largest lean range, median (deg)": [
+  8.977290374264891,
+  21.328319489661677,
+  13.916842377221219
+ ],
+ "22 sets: largest a_y/g range": [
+  0.1599554225409082,
+  0.3993420861247271
+ ],
+ "sets below 20 deg": 21,
+ "second-order rule below 20 deg: rms, largest |error| (deg)": [
+  0.010122986066587139,
+  0.01735653716193042
+ ],
+ "first-order rule below 20 deg: rms, largest error (deg), set": [
+  0.20387987942820326,
+  0.3883342403203258,
+  "Rigid+Jason"
+ ],
+ "first-order rule below 20 deg: overestimates": 19,
+ "above 20 deg: second-order, first-order error (deg)": {
+  "Yellowrev+Jason": [
+   0.6613502038849148,
+   1.6599850236896145
+  ],
+  "Rigid+rider(Schwab2013)": [
+   0.08319131732567442,
+   0.805018839631586
+  ]
+ },
+ "Yellowrev+Jason: v_c, tip V, tip lean, largest lean, at V, a_y/g": [
+  14.238602971413547,
+  4.2069759595859715,
+  16.38102534946303,
+  30.398702758917743,
+  10.831224247933271,
+  0.6029182323199455
+ ],
+ "Yellowrev+Jason: tau3(v_c) (N m)": 0.0856014422396329,
+ "benchmark V_a3, BT speed (m/s)": [
+  2.760801922781427,
+  2.789560290281028
+ ],
+ "23 sets: V_BT / V_a3 range, free rolling": [
+  0.9501623938591223,
+  1.018447930269782
+ ],
+ "23 sets: V_a3 / V_BT range, free rolling": [
+  0.9818862312726236,
+  1.0524516719067993
+ ],
+ "23 sets: largest |V_BT / V_a3 - 1|, constant speed": 0.16541855456905963,
+ "23 sets: v_w range": [
+  3.4881342805487763,
+  6.201020731659479
+ ],
+ "23 sets: v_c range": [
+  5.945320268631351,
+  14.238602971413547
+ ],
+ "23 sets: tip speed / v_w range": [
+  0.6826702452129386,
+  0.7861212674899563
+ ],
+ "23 sets: constant speed largest lean / free rolling - 1, range": [
+  0.0531738951701719,
+  0.14915057604477266
+ ],
+ "T/g at 3 m/s, adult riders (range, N m)": [
+  -3.0588396744607413,
+  -10.555864652250577
+ ],
+ "T/g at 3 m/s, Yellowrev+Jason, Gyro+Child": [
+  -16.723521649771403,
+  -0.5449573677247083
+ ],
+ "T/g at 3 m/s, riderless (range, N m)": [
+  -0.11296768950816209,
+  -2.4446151713073654
+ ],
+ "|T/g| per kg of total mass, adult riders (range)": [
+  0.02796091504360217,
+  0.10076716769844471
+ ],
+ "grid: every stable turn up to the largest stable lean has T < 0": true,
+ "grid, rider sets: stable turns with T > 0 beyond the region (lean min, max, a_y/g min)": {
+  "Crescendo+Jason": [
+   41.0,
+   45.0,
+   1.1526392160534034
+  ],
+  "Fisher+Jason72(Hess2012)": [
+   38.0,
+   42.0,
+   1.0135613226429152
+  ],
+  "Gyro+Child": [
+   27.0,
+   45.0,
+   0.6662327209439887
+  ],
+  "Pista+Jason72(Hess2012)": [
+   37.0,
+   45.0,
+   0.9486642487649386
+  ],
+  "Yellowrev+Jason": [
+   40.0,
+   45.0,
+   1.3497714363102475
+  ]
+ },
+ "pairs of the same bicycle with and without a rider": 21,
+ "upright band widening factor (range)": [
+  1.3818188855340752,
+  18.431765544581772
+ ],
+ "pairs with a region in both states; pairs where the largest lean grows": [
+  20,
+  17
+ ],
+ "pairs where the largest lean falls (change, deg)": {
+  "Fisher+Jason72(Hess2012)": -1.548192143565986,
+  "Pista+Jason72(Hess2012)": -0.8484520276736198,
+  "Yellow+Jason72(Hess2012)": -0.6078754682208878
+ },
+ "tip speed rise, bicycles other than the Browser (range, m/s)": [
+  0.5216125274237209,
+  1.3159749796330713
+ ],
+ "Browser: rider mass (kg), largest lean (deg), tip speed (m/s)": [
+  [
+   59.7139696831242,
+   12.07089186778482,
+   3.3389446415316124,
+   "Browser+Aurelia"
+  ],
+  [
+   60.636308445765486,
+   12.479713230111752,
+   3.3928006732157225,
+   "Browser+Chris"
+  ],
+  [
+   78.745,
+   13.43001064932745,
+   3.5035017768441454,
+   "Browser+Charlie"
+  ],
+  [
+   83.5,
+   14.057032723818176,
+   3.553719270959255,
+   "Browser+Jason"
+  ],
+  [
+   84.273,
+   13.776652030624259,
+   3.503178989520843,
+   "Browser+Luke"
+  ],
+  [
+   102.27907165918265,
+   14.863425633795964,
+   3.6474986257524327,
+   "Browser+Mont"
+  ]
+ ],
+ "riderless with a benchmark-type region": [
+  "Balanceassistv1",
+  "Browserins",
+  "Crescendo",
+  "Fisher",
+  "Gyro",
+  "Pista",
+  "Rigid",
+  "Rigidcl",
+  "Stratos",
+  "Yellow"
+ ],
+ "riderless: first-order rule rms, largest error (deg), set": [
+  0.30143992211677545,
+  -0.590191882594036,
+  "Gyro"
+ ],
+ "riderless: first-order rule underestimates": 8
+}
