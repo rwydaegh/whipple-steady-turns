@@ -2,7 +2,8 @@
 
 Three trims hold a turn:
   "free"    constant steer torque, free rolling (5 states, one zero eigenvalue)
-  "held"    constant steer torque, rear-wheel speed held by an ideal servo (4 states)
+  "constant" constant steer torque, constant rear-wheel speed kept by an ideal servo (4 states);
+            "held" is an older name for the same trim
   "offset"  zero steer torque, rear-frame mass centre offset sideways (Franke et al. 1990)
 """
 
@@ -41,7 +42,7 @@ def turn_jacobian(bike: Whipple, phi, delta, plant="free"):
     turn = bike.turn(phi, delta)
     if turn is None:
         raise ValueError("no forward steady turn through this lean and steer")
-    if plant == "held":
+    if plant in ("constant", "held"):
 
         def lateral(x):
             _, Mr, f, _ = bike.parts(x[0], x[1], np.r_[x[2], x[3], turn.s])

@@ -1,6 +1,8 @@
 """Parameters of the benchmark bicycle and of bicycles A and B (SI units, angles in rad)."""
 
+import json
 import math
+from pathlib import Path
 
 BENCHMARK = dict(
     w=1.02, c=0.08, lam=math.pi / 10, g=9.81,
@@ -25,3 +27,28 @@ BICYCLE_A = dict(_CITY, IHyy=0.30)
 BICYCLE_B = dict(_CITY, IHyy=0.54)
 
 BICYCLES = {"benchmark": BENCHMARK, "A": BICYCLE_A, "B": BICYCLE_B}
+
+
+# ---- measured parameter sets (whipple/data/) ----------------------------------------------------
+# rider_bicycles.json: measured bicycles with a rigid rider; riderless_bicycles.json: measured
+# bicycles without a rider. Each record holds the parameters and the fields "source" and "status".
+# Source and licence: see README.md, section "Data".
+
+_DATA = Path(__file__).resolve().parent / "data"
+_GROUPS = {"rider": "rider_bicycles.json", "riderless": "riderless_bicycles.json"}
+
+
+def _records(group: str) -> dict:
+    if group not in _GROUPS:
+        raise ValueError(f"group must be one of {tuple(_GROUPS)}, not {group!r}")
+    return json.loads((_DATA / _GROUPS[group]).read_text())
+
+
+def measured_sets(group: str = "rider") -> dict:
+    """Parameter dicts of the measured sets of ``group`` ("rider" or "riderless"), by name."""
+    return {k: {q: v[q] for q in BENCHMARK} for k, v in _records(group).items()}
+
+
+def measured_sources(group: str = "rider") -> dict:
+    """Source and status of each measured set of ``group``, by name."""
+    return {k: {"source": v["source"], "status": v["status"]} for k, v in _records(group).items()}

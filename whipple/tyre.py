@@ -226,5 +226,5 @@ class TyreBike(Whipple):
         return wr, x, res
 
     def turn_eigenvalues(self, phi, wr, x):
-        """Eigenvalues of the steady turn at held rear-wheel speed (8x8)."""
+        """Eigenvalues of the steady turn at constant rear-wheel speed (8x8)."""
         return np.linalg.eigvals(self.jacobian(self._state(phi, wr, x), x[6], x[5], hold=True))
