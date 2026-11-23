@@ -37,4 +37,4 @@ The measured bicycle and rider parameters in `whipple/data/` derive from the Bic
 
 AI tools helped to develop much of the derivations and of the code; the tests and a recomputation with separate solvers check the results.
 
-Please cite the paper, R. Wydaeghe and D. J. N. Limebeer, Stability of steady turns of the Whipple bicycle, manuscript in preparation (2026), and the software as given in `CITATION.cff`.
+Please cite the manuscript in preparation, Stability of steady turns of the Whipple bicycle (2026), and the software as listed in `CITATION.cff`.
