@@ -65,12 +65,29 @@ def test_stored_energy_numbers():
     assert rec["free"]["predicted_end"]["V"] == pytest.approx(5.0164, abs=5e-5)
     assert rec["free"]["predicted_end"]["lean_deg"] == pytest.approx(8.240, abs=5e-4)
     assert rec["free"]["H_drift_max"] < 1e-10
-    row = cap["table"][-1]
-    assert row["U_drop"] == pytest.approx(215.5, abs=0.05)
+    row = cap["table"][-1]  # at the lean crossing 45 deg, drop from the first state of the run
+    assert row["lean"] == 45
+    assert row["U_drop"] == pytest.approx(214.7, abs=0.05)
+    assert row["height_drop"] == pytest.approx(0.233, abs=5e-4)
+    assert row["dKf"] == pytest.approx(213.4, abs=0.05)
+    assert row["dKl"] == pytest.approx(1.29, abs=0.005)
+    assert row["torque_work"] == pytest.approx(-0.04, abs=0.005)
     assert row["share_Kf"] == pytest.approx(0.994, abs=5e-4)
     assert row["V_estimate"] == pytest.approx(5.02, abs=0.005)
     assert row["V_rear_contact"] == pytest.approx(6.03, abs=0.005)
-    assert row["V_mass_centre"] == pytest.approx(4.84, abs=0.005)
-    w = json.loads((DATA / "growing_weave.json").read_text())["kick_4p1"]["upright"]
-    c = w["change_of_cycle_means"]
-    assert [c["U"], c["Kl"], c["Kf"]] == pytest.approx([-3.65, 3.62, 0.03], abs=0.006)
+    assert row["V_mass_centre"] == pytest.approx(4.83, abs=0.005)
+    r = cap["path_radius_at_45deg"]
+    assert r["rear_contact"] == pytest.approx(2.9, abs=0.05)
+    assert r["rear_contact"] - r["mass_centre"] == pytest.approx(0.6, abs=0.05)
+    g = json.loads((DATA / "growing_weave.json").read_text())
+    # upright weave eigenmode at 4.1 m/s on fixed H: phase means per lean amplitude squared (J)
+    m = g["upright_mode"]
+    assert [m["U"], m["Kl"], m["Kf"]] == pytest.approx([-215.3, 221.4, -6.1], abs=0.05)
+    assert m["heading_translation_plus_wheel_spin"] == pytest.approx(-25.8, abs=0.05)
+    # run from a kick to 7.5 deg of lean amplitude: the mean height of the mass centre falls 4.0 mm
+    w = g["kick_4p1"]["upright"]
+    assert w["amplitude_end_deg"] == pytest.approx(7.5, abs=0.05)
+    assert w["change_of_cycle_means"]["hg"] == pytest.approx(-0.0040, abs=5e-5)
+    # growing weave at 6 deg, constant speed: net drive work over whole weave cycles
+    c = g["turn_6deg_4p10"]["constant"]
+    assert c["H_cycle_mean_minus_H_star_end"] == pytest.approx(-2.63, abs=0.005)

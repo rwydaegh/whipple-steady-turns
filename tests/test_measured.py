@@ -87,7 +87,7 @@ def test_first_order_rule(rider):
 
 
 def test_second_order_rule():
-    """21 sets below 20 deg: rms 0.010 deg (paper 0.011), largest error 0.02 deg."""
+    """21 sets below 20 deg: rms 0.010 deg, largest error 0.02 deg."""
     s = json.loads((DATA / "tensor_corrections.json").read_text())["rule_stats_below_20deg"]
     s = s["projected"]["rule_free_second"]
     assert s["n"] == 21

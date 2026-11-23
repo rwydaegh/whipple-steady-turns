@@ -31,7 +31,7 @@ def test_order2_accuracy(summary):
 def test_hybrid_accuracy(summary):
     """Exact a4: 0.115 deg on 13 sets and the tip within about 1 % in speed.
 
-    With Silver and Yellowrev the paper gives 0.17 deg; with the tip point included it is 0.28 deg.
+    With Silver and Yellowrev and the tip point included it is 0.28 deg (not in the paper).
     """
     assert summary["hybrid_max_13_sets"][0] == pytest.approx(0.115, abs=0.003)
     assert summary["hybrid_max_with_Silver_Yellowrev"][0] == pytest.approx(0.28, abs=0.01)

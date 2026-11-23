@@ -18,7 +18,7 @@
    "agrees": true
   },
   {
-   "where": "Sect. 8.2 Tip speed",
+   "where": "Sect. 8.3 Tip speed",
    "quantity": "benchmark V_a3 (m/s)",
    "paper": "2.761",
    "independent": 2.760801922781425,
@@ -26,7 +26,7 @@
    "agrees": true
   },
   {
-   "where": "Sect. 4 Background",
+   "where": "Sect. 4 Eigenvalues against speed",
    "quantity": "benchmark zero-speed rate 1 (1/s)",
    "paper": "3.13",
    "independent": 3.131643247906555,
@@ -34,7 +34,7 @@
    "agrees": true
   },
   {
-   "where": "Sect. 4 Background",
+   "where": "Sect. 4 Eigenvalues against speed",
    "quantity": "benchmark zero-speed rate 2 (1/s)",
    "paper": "5.53",
    "independent": 5.530943717653935,
@@ -92,7 +92,7 @@
    "tol": 1e-12
   },
   {
-   "where": "Sect. 13.1 Spring and damper",
+   "where": "Sect. 13.2 Centring spring",
    "quantity": "benchmark kappa_c (N m s^2/rad/m^2)",
    "paper": "0.1946",
    "independent": 0.1945735268573518,
@@ -100,7 +100,7 @@
    "agrees": true
   },
   {
-   "where": "Sect. 13.1 Spring and damper",
+   "where": "Sect. 13.2 Centring spring",
    "quantity": "benchmark k0 (N m/rad)",
    "paper": "7.061",
    "independent": 7.061410452507777,
@@ -108,7 +108,7 @@
    "agrees": true
   },
   {
-   "where": "Sect. 13.1 Spring and damper",
+   "where": "Sect. 13.2 Centring spring",
    "quantity": "benchmark k* (N m/rad)",
    "paper": "5.578",
    "independent": 5.578365727342799,
@@ -116,7 +116,7 @@
    "agrees": true
   },
   {
-   "where": "Sect. 13.1 Spring and damper",
+   "where": "Sect. 13.2 Centring spring",
    "quantity": "upright a4 at V_a3 with k = k*",
    "paper": "exact",
    "independent": 4.857106781442466e-14,
@@ -133,7 +133,7 @@
    "agrees": true
   },
   {
-   "where": "Sect. 13.1 Spring and damper",
+   "where": "Sect. 13.2 Centring spring",
    "quantity": "measured sets: smallest k* (N m/rad)",
    "paper": "0.98",
    "independent": 0.9756040793995103,
@@ -141,7 +141,7 @@
    "agrees": true
   },
   {
-   "where": "Sect. 13.1 Spring and damper",
+   "where": "Sect. 13.2 Centring spring",
    "quantity": "measured sets: largest k* (N m/rad)",
    "paper": "15.1",
    "independent": 15.068774940265314,
@@ -149,7 +149,7 @@
    "agrees": true
   },
   {
-   "where": "Sect. 13.1 Spring and damper",
+   "where": "Sect. 13.2 Centring spring",
    "quantity": "measured sets: median k* (N m/rad)",
    "paper": "5.2",
    "independent": 5.206001505632715,
@@ -190,7 +190,7 @@
    "tol": 1e-09
   },
   {
-   "where": "Sect. 6.4 Constant speed",
+   "where": "Sect. 6.4 Capsize rule at constant speed",
    "quantity": "a4 against mu_S det d(T,S)/d(lean,steer)",
    "paper": "exact",
    "independent": 7.457866978694649e-12,
@@ -204,15 +204,6 @@
    "paper": "exact",
    "independent": 6.270636715902984e-15,
    "difference": 6.270636715902984e-15,
-   "agrees": true,
-   "tol": 1e-09
-  },
-  {
-   "where": "Eq. (family)",
-   "quantity": "speed feedback polynomial against lambda chi_H + gamma chi_S",
-   "paper": "exact",
-   "independent": 6.160102871728373e-15,
-   "difference": 6.160102871728373e-15,
    "agrees": true,
    "tol": 1e-09
   },
@@ -384,7 +375,7 @@
    "agrees": true
   },
   {
-   "where": "Sect. 8.2 Tip speed",
+   "where": "Sect. 8.3 Tip speed",
    "quantity": "benchmark BT speed (m/s)",
    "paper": "2.790",
    "independent": 2.7895602902810728,
@@ -472,19 +463,11 @@
    "agrees": true
   },
   {
-   "where": "Sect. S speed feedback",
+   "where": "Sect. S order of the two folds",
    "quantity": "benchmark largest stable lean, constant speed (deg)",
    "paper": "13.84",
    "independent": 13.840201429907726,
    "difference": 0.00020142990772598068,
-   "agrees": true
-  },
-  {
-   "where": "Sect. S speed feedback",
-   "quantity": "gamma of saturation (1/s)",
-   "paper": "0.113",
-   "independent": 0.11260521965073385,
-   "difference": -0.000394780349266155,
    "agrees": true
   },
   {
@@ -600,7 +583,7 @@
    "agrees": true
   },
   {
-   "where": "Sect. 13.1 Spring and damper",
+   "where": "Sect. 13.2 Centring spring",
    "quantity": "benchmark largest stable lean at k = 0.4 k* (deg)",
    "paper": "8.13",
    "independent": 8.131309958087423,
@@ -608,7 +591,7 @@
    "agrees": true
   },
   {
-   "where": "Sect. 13.1 Spring and damper",
+   "where": "Sect. 13.2 Centring spring",
    "quantity": "benchmark largest stable lean at k = 0.8 k* (deg)",
    "paper": "4.04",
    "independent": 4.035130150718069,
@@ -696,15 +679,15 @@
    "agrees": true
   },
   {
-   "where": "Sect. 3.3 Energy in a capsize",
+   "where": "Sect. 3.2 Energy in disturbed motions",
    "quantity": "potential energy drop from 12.6 to 45 deg (J)",
-   "paper": "215.5",
+   "paper": "214.7",
    "independent": 214.68857712340878,
-   "difference": -0.811422876591223,
-   "agrees": false
+   "difference": -0.011422876591211661,
+   "agrees": true
   },
   {
-   "where": "Sect. 3.3 Energy in a capsize",
+   "where": "Sect. 3.2 Energy in disturbed motions",
    "quantity": "share of the drop taken by K_f (%)",
    "paper": "99.4",
    "independent": 99.38485676677664,
@@ -712,7 +695,7 @@
    "agrees": true
   },
   {
-   "where": "Sect. 3.3 Energy in a capsize",
+   "where": "Sect. 3.2 Energy in disturbed motions",
    "quantity": "speed estimate sqrt(V0^2 + 2 g dh) (m/s)",
    "paper": "5.02",
    "independent": 5.01898467537451,
@@ -720,7 +703,7 @@
    "agrees": true
   },
   {
-   "where": "Sect. 3.3 Energy in a capsize",
+   "where": "Sect. 3.2 Energy in disturbed motions",
    "quantity": "rear-contact speed at 45 deg (m/s)",
    "paper": "6.03",
    "independent": 6.0265992490371065,
@@ -728,15 +711,15 @@
    "agrees": true
   },
   {
-   "where": "Sect. 3.3 Energy in a capsize",
+   "where": "Sect. 3.2 Energy in disturbed motions",
    "quantity": "mass-centre speed at 45 deg (m/s)",
-   "paper": "4.84",
+   "paper": "4.83",
    "independent": 4.834538893539192,
-   "difference": -0.005461106460807663,
-   "agrees": false
+   "difference": 0.004538893539192124,
+   "agrees": true
   },
   {
-   "where": "Sect. 3.3 Energy in a capsize",
+   "where": "Sect. 3.2 Energy in disturbed motions",
    "quantity": "drift of H = E - T delta over the run (J)",
    "paper": "exact",
    "independent": -7.048583938740194e-12,

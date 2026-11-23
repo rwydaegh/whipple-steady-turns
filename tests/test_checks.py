@@ -31,7 +31,7 @@ def test_upright_speeds_and_spring_constants():
     )
     assert closed["kappa_c"] == pytest.approx(elim["kappa_c"], rel=1e-12)
     assert closed["V_a3"] == pytest.approx(u["V_a3"], rel=1e-12)
-    # Sect. 13.1: k_c = 7.061 - 0.1946 V^2 N m/rad, k* = 5.578 N m/rad.
+    # Sect. 13.2: k_c = 7.061 - 0.1946 V^2 N m/rad, k* = 5.578 N m/rad.
     assert elim["kappa_c"] == pytest.approx(0.1945735, abs=1e-7)
     assert elim["k0"] == pytest.approx(7.061, abs=5e-4)
     kstar = elim["kappa_c"] * (u["v_c"] ** 2 - u["V_a3"] ** 2)

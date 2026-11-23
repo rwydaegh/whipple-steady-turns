@@ -125,7 +125,11 @@ def capsize(bike, lin, quick):
         return min(math.radians(62.0) - abs(y[0]), math.radians(60.0) - abs(y[1]))
 
     runaway.terminal = True
-    sol = simulate(field_free(bike, t.T), z0, t_end, int(t_end / 0.01) + 1, events=runaway)
+    leans = (20, 30, 45)
+    crossings = [_lean_event(math.radians(lean), terminal=False) for lean in leans]
+    sol = simulate(
+        field_free(bike, t.T), z0, t_end, int(t_end / 0.01) + 1, events=[runaway, *crossings]
+    )
     s = series(bike, sol, t.T)
     m_mass, m_tot, g = bike.mass.sum(), bike.m_tot, bike.p["g"]
     U0, V0 = s["U"][0], s["V"][0]
@@ -133,28 +137,34 @@ def capsize(bike, lin, quick):
     s["Vsimple"] = np.sqrt(V0**2 + 2 * drop / m_mass)
     s["Veff"] = np.sqrt(V0**2 + 2 * (drop - (s["Kl"] - s["Kl"][0]) + s["WT"]) / m_tot)
     i45 = int(np.flatnonzero(np.degrees(s["phi"]) >= 45.0)[0])
+    # table rows at the exact lean crossings (event states), not at the next output sample
+    e0 = energy_parts(bike, sol.y[:5, 0])
     table = []
-    for lean in (20, 30, 45):
-        i = int(np.flatnonzero(np.degrees(s["phi"]) >= lean)[0])
+    for lean, te, ye in zip(leans, sol.t_events[1:], sol.y_events[1:]):
+        z = ye[0][:5]
+        e, sp = energy_parts(bike, z), speeds(bike, z)
+        d_u = U0 - e["U"]
+        torque_work = t.T * (z[1] - sol.y[1, 0])
+        d_kl = e["Kl"] - e0["Kl"]
         table.append(
             dict(
                 lean=lean,
-                t=s["t"][i],
-                V_rear_contact=s["V"][i],
-                V_mass_centre=s["Vcm"][i],
-                V_estimate=s["Vsimple"][i],
-                V_effective_mass=s["Veff"][i],
-                height_drop=drop[i] / (m_mass * g),
-                U_drop=drop[i],
-                dKf=s["Kf"][i] - s["Kf"][0],
-                dKl=s["Kl"][i] - s["Kl"][0],
-                torque_work=s["WT"][i],
-                share_Kf=(s["Kf"][i] - s["Kf"][0]) / drop[i],
-                share_Kl=(s["Kl"][i] - s["Kl"][0]) / drop[i],
+                t=te[0],
+                V_rear_contact=sp["Vc"],
+                V_mass_centre=sp["Vg"],
+                V_estimate=math.sqrt(V0**2 + 2 * d_u / m_mass),
+                V_effective_mass=math.sqrt(V0**2 + 2 * (d_u - d_kl + torque_work) / m_tot),
+                height_drop=d_u / (m_mass * g),
+                U_drop=d_u,
+                dKf=e["Kf"] - e0["Kf"],
+                dKl=d_kl,
+                torque_work=torque_work,
+                share_Kf=(e["Kf"] - e0["Kf"]) / d_u,
+                share_Kl=d_kl / d_u,
             )
         )
     # path radius of the rear contact and of the mass centre at 45 deg: speed over yaw rate
-    sp = speeds(bike, sol.y[:5, i45])
+    sp = speeds(bike, sol.y_events[3][0][:5])
     radius = dict(
         rear_contact=sp["Vc"] / abs(sp["yaw_rate"]), mass_centre=sp["Vg"] / abs(sp["yaw_rate"])
     )
@@ -181,11 +191,11 @@ def capsize(bike, lin, quick):
     return info, s
 
 
-def _lean_event(limit):
+def _lean_event(limit, terminal=True):
     def ev(t, z):
         return z[0] - limit
 
-    ev.terminal = True
+    ev.terminal = terminal
     return ev
 
 

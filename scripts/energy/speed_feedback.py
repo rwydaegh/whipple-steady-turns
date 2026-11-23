@@ -1,4 +1,4 @@
-"""Largest stable lean with speed feedback (supplementary "Constant speed", Eq. family)."""
+"""Largest stable lean with speed feedback (not in the paper)."""
 
 import argparse
 import math

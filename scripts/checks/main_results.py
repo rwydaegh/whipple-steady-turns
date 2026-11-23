@@ -11,7 +11,6 @@ import numpy as np
 from independent import (
     Bike,
     complex_jacobian,
-    feedback_identity,
     fold_identity,
     fold_saddle,
     largest_on_fold,
@@ -128,10 +127,10 @@ def upright_and_spring():
     u = upright_speeds(BENCH)
     value(w, "benchmark v_w (m/s)", "4.292", u["v_w"])
     value(w, "benchmark v_c (m/s)", "6.024", u["v_c"])
-    value("Sect. 8.2 Tip speed", "benchmark V_a3 (m/s)", "2.761", u["V_a3"])
+    value("Sect. 8.3 Tip speed", "benchmark V_a3 (m/s)", "2.761", u["V_a3"])
     r = zero_speed_rates(BENCH)
-    value("Sect. 4 Background", "benchmark zero-speed rate 1 (1/s)", "3.13", r[0])
-    value("Sect. 4 Background", "benchmark zero-speed rate 2 (1/s)", "5.53", r[1])
+    value("Sect. 4 Eigenvalues against speed", "benchmark zero-speed rate 1 (1/s)", "3.13", r[0])
+    value("Sect. 4 Eigenvalues against speed", "benchmark zero-speed rate 2 (1/s)", "5.53", r[1])
     for name in ("A", "B"):
         ub = upright_speeds(BICYCLES[name])
         value("Table S region", f"{name} v_w (m/s)", "4.805", ub["v_w"])
@@ -149,7 +148,7 @@ def upright_and_spring():
         closed["kappa_c"] - elim["kappa_c"],
         1e-12,
     )
-    w = "Sect. 13.1 Spring and damper"
+    w = "Sect. 13.2 Centring spring"
     value(w, "benchmark kappa_c (N m s^2/rad/m^2)", "0.1946", elim["kappa_c"])
     value(w, "benchmark k0 (N m/rad)", "7.061", elim["k0"])
     kstar = elim["kappa_c"] * (u["v_c"] ** 2 - u["V_a3"] ** 2)
@@ -204,7 +203,7 @@ def regions(u, kstar):
     turn = b.model.turn(z[0], z[1])
     roots = sorted(np.roots(np.r_[1.0, b.quartic(Vbt, phibt)]), key=abs)[2:]
     value(w, "benchmark BT lean (deg)", "9.26", phibt * DEG)
-    value("Sect. 8.2 Tip speed", "benchmark BT speed (m/s)", "2.790", Vbt)
+    value("Sect. 8.3 Tip speed", "benchmark BT speed (m/s)", "2.790", Vbt)
     value(w, "benchmark BT steer torque (N m)", "-0.858", T)
     value("Table S region", "benchmark BT steer (rad)", "0.226", z[1])
     value("Table S region", "benchmark BT radius (m)", "4.60", turn.R)
@@ -216,17 +215,13 @@ def regions(u, kstar):
     Vay, _, ay = largest_on_fold(b, Vbt, v_c * (1 - 1e-6), quantity="ay")
     value(w, "benchmark largest stable a_y/g", "0.227", ay / G)
     value("Table S region", "benchmark largest stable a_y at V (m/s)", "4.47", Vay)
-    _, _, (Vs, phis), _ = region("benchmark", BENCH, u, "constant")
+    _, _, (_, phis), _ = region("benchmark", BENCH, u, "constant")
     value(
-        "Sect. S speed feedback",
+        "Sect. S order of the two folds",
         "benchmark largest stable lean, constant speed (deg)",
         "13.84",
         phis * DEG,
     )
-    # Speed feedback: the largest stable lean reaches the constant-speed value where a second zero
-    # root appears at the constant-speed fold maximum, d p/d lambda (0) = a4_H + gamma a3_S = 0.
-    gamma = -b.quartic(Vs, phis, "free")[3] / b.quartic(Vs, phis, "constant")[2]
-    value("Sect. S speed feedback", "gamma of saturation (1/s)", "0.113", gamma)
     paper = {
         "A": ("12.04", "3.29", "-0.296", "15.16", "4.81", "0.266", "4.73"),
         "B": ("12.50", "3.34", "-0.294", "16.07", "4.94", "0.282", "4.87"),
@@ -247,7 +242,7 @@ def regions(u, kstar):
         )
         for label, pv, iv in zip(labels, vals, got):
             value("Table S region", f"{name} {label}", pv, iv)
-    w = "Sect. 13.1 Spring and damper"
+    w = "Sect. 13.2 Centring spring"
     for frac, paper_lean in ((0.4, "8.13"), (0.8, "4.04")):
         _, _, (V, phi), _ = region("benchmark", BENCH, u, k=frac * kstar)
         value(w, f"benchmark largest stable lean at k = {frac} k* (deg)", paper_lean, phi * DEG)
@@ -317,7 +312,7 @@ TURNS = [(3.0, 0.10), (4.0, 0.15), (4.54, 0.21), (5.5, 0.05), (6.5, 0.30), (8.0,
 
 def identities():
     b = Bike(BENCH)
-    res = {"free": 0.0, "constant": 0.0, "pencil": 0.0, "feedback": 0.0}
+    res = {"free": 0.0, "constant": 0.0, "pencil": 0.0}
     for V, phi in TURNS:
         f = fold_identity(b, V, phi)
         for plant in ("free", "constant"):
@@ -329,7 +324,6 @@ def identities():
                     b.quartic(V, phi, plant),
                 ),
             )
-        res["feedback"] = max(res["feedback"], rel(*feedback_identity(b, V, phi, 2.0)))
     identity(
         "Theorem 1 (eq. fold)",
         "a4 against mu det d(T,H)/d(lean,steer), free rolling",
@@ -337,7 +331,7 @@ def identities():
         1e-9,
     )
     identity(
-        "Sect. 6.4 Constant speed",
+        "Sect. 6.4 Capsize rule at constant speed",
         "a4 against mu_S det d(T,S)/d(lean,steer)",
         res["constant"],
         1e-9,
@@ -346,12 +340,6 @@ def identities():
         "Eq. (pencil)",
         "quartic of the 2x2 pencil against the Jacobian, both plants",
         res["pencil"],
-        1e-9,
-    )
-    identity(
-        "Eq. (family)",
-        "speed feedback polynomial against lambda chi_H + gamma chi_S",
-        res["feedback"],
         1e-9,
     )
     err = 0.0
@@ -544,7 +532,7 @@ def parameter_rank(name, p, n_states=16):
 
 
 def capsize_run():
-    """Free-rolling capsize from the unstable turn at 4.54 m/s and 12.6 deg (Sect. 3.3)."""
+    """Free-rolling capsize from the unstable turn at 4.54 m/s and 12.6 deg (Sect. 3.2)."""
     b = Bike(BENCH)
     z, T = b.trim(4.54, math.radians(12.6))
     vals, vecs = np.linalg.eig(b.jacobian(z, T))
@@ -586,8 +574,8 @@ def capsize_run():
         Mm = m.parts(y[0], y[1], np.zeros(3))[1]
         return (Mm[2] @ y[2:5]) ** 2 / (2 * Mm[2, 2])
 
-    w = "Sect. 3.3 Energy in a capsize"
-    value(w, "potential energy drop from 12.6 to 45 deg (J)", "215.5", drop)
+    w = "Sect. 3.2 Energy in disturbed motions"
+    value(w, "potential energy drop from 12.6 to 45 deg (J)", "214.7", drop)
     value(
         w,
         "share of the drop taken by K_f (%)",
@@ -601,7 +589,7 @@ def capsize_run():
         math.sqrt((z[4] * b.rR) ** 2 + 2 * G * dh),
     )
     value(w, "rear-contact speed at 45 deg (m/s)", "6.03", v_rear)
-    value(w, "mass-centre speed at 45 deg (m/s)", "4.84", np.linalg.norm(v_cm))
+    value(w, "mass-centre speed at 45 deg (m/s)", "4.83", np.linalg.norm(v_cm))
     identity(w, "drift of H = E - T delta over the run (J)", b.energy(end) - T * end[1] - H, 1e-8)
 
 
